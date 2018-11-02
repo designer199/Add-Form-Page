@@ -6,11 +6,11 @@
 - [x] Add form page is completed and responsive for mobile ,tablet and desktop.
   
   ### Desktop View     
-  ![](images/destopview.png) 
+  ![](images/desktopview.jpg) 
   
  ### Mobile View
 
-![](images/mobileview.png) 
+![](images/mobile-view.jpg) 
 
 
 
