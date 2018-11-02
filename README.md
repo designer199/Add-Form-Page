@@ -8,13 +8,10 @@
   ### Desktop View     
   ![](images/destopview.png) 
   
-  ### Tablet View
-  ![](images/tabletview.png)  
-
-### Mobile View
+ ### Mobile View
 
 ![](images/mobileview.png) 
 
-- [ ] I am currently working to make the add booking form responsive.
+
 
 
