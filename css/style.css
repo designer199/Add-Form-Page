@@ -6,6 +6,10 @@ body {
     font-weight: 400;
     background-color: #F0F0F7;
 }
+.submitbtn
+{
+    margin: 2% 0 2% 38%;
+}
 .nav-logo
 {
     height:60px;
@@ -41,7 +45,7 @@ body {
         text-transform: uppercase;
         padding: 6px;
         border-radius: 3px;
-        margin:5px;
+     
         background: linear-gradient(135deg, #ff4c9f, #ff7b74);
         border: 1px solid transparent;
         color: #fff;
@@ -89,7 +93,7 @@ body {
 label {
    
     max-width: 100%;
-    margin-bottom: 15px;
+
     font-weight: bold;
 }
 input {
@@ -143,7 +147,7 @@ input {
 }
 .custom-submit-btn {
   
-    float:right;
+   
 }
 .grid-form
     {

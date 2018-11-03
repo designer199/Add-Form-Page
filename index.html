@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
-    
+    <link rel="stylesheet" href="css/jquery.datetimepicker.min.css" /> 
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Add Booking</title>
 </head>
@@ -88,8 +88,8 @@
                                           <a class="dropdown-item" href="#">Client Self Billing</a>
                                         </div>
                                       </li>
-                                      <button class="custom-submit-btn btn btn-default">Support</button>
-                                      
+                                     
+                                      <button class="custom-submit-btn btn btn-default">Support</button>                    
                   </ul>
                        
                        
@@ -104,7 +104,7 @@
         <form id="addBookingForm" class="formCreate__form" method="post" action="">
             <div class="formitem">
                 <label class="addbookinglabel">ADD BOOKING</label>
-                <input type="submit" value="submit" class="formCreate__input custom-submit-btn btn">
+               
               </div>
             </div>
               <div class="formCreate__content grid-form">
@@ -117,7 +117,9 @@
 
                 <div class="formCreate_form-group item mlb">
                         <label>PICKUP DATE | TIME*</label>
-                        <input type='text' class="form-control date-time-input" id='datetimepicker1' name="pickup_datetime" required />
+                        <div class="input-group date">
+                          <input type="text" class="form-control date-time-input" id="datetimepicker1" name="pickup_datetime" required="">
+                        </div>
                       </div>
 
                       <div class="formCreate_form-group item ml mlb">
@@ -132,9 +134,9 @@
 
                           <div class="formCreate_form-group mlb">
                                 <label>USERS*</label>
-                                <p class="emp-code">EMPCODE-NAME-CONTACT-EMAIL</p>
+                               
                                 <select class="select-css select2-custom-users" id="users" name="users[]" required>
-                                        <option value="">Select Users</option>
+                                        <option value="">EMPCODE-NAME-CONTACT-EMAIL</option>
                                 </select>
                               </div>
 
@@ -146,9 +148,9 @@
                                   </div>
 
                                   <div class="formCreate_form-group mlb">
-                                        <label>REASON FOR BOOKING*</label>
-                                        <textarea class="form-control custom-textarea" name="reason_of_booking" required placeholder="Enter Your Reason For Booking"></textarea>
-                                      </div>
+                                    <label>COST CENTER CODE</label>
+                                    <input class="form-control" type="text" name="cost_center_code" placeholder="Enter Cost Center Code" />
+                                  </div>  
 
                                       <div class="formCreate_form-group ml mlb">
                                             <label>PICKUP LOCATION*</label>
@@ -156,9 +158,10 @@
                                           </div>
 
                                           <div class="formCreate_form-group mlb">
-                                                <label>COST CENTER CODE</label>
-                                                <input class="form-control" type="text" name="cost_center_code" placeholder="Enter Cost Center Code" />
-                                              </div>  
+                                            <label>REASON FOR BOOKING*</label>
+                                            <textarea class="form-control custom-textarea" name="reason_of_booking" required placeholder="Enter Your Reason For Booking"></textarea>
+                                          </div>
+                                         
                                               
                                               <div class="formCreate_form-group ml mlb">
                                                     <label>TAXI TYPE*</label>
@@ -180,16 +183,30 @@
                                                               <option>Select Package Type</option>
                                                             </select>
                                                           </div>
-                    </div><!--/formgrid-->
-              
+                                                          <div class="formCreate__form-group"></div>
+                                                        </div><!--/formgrid-->
+                                                            <input type="submit" value="submit" class="formCreate__input custom-submit-btn btn submitbtn">      
+                   
+                       
         </form>
    
 </div>
   <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src ="js/jquery.datetimepicker.full.min.js"></script>
+
+    <script type="text/javascript">
+      $(function () {
+          $('#datetimepicker1').datetimepicker();
+      });
+            
+  </script>
 </body>
 </html>
