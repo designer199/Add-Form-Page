@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.datetimepicker.min.css" /> 
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Support </title>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg mb-3">
+                <a class="navbar-brand" href="#"><img src ="images/logo.png" class="nav-logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+                        <svg class="svg-icon" viewBox="0 0 20 20">
+                                <path d="M10,1.445c-4.726,0-8.555,3.829-8.555,8.555c0,4.725,3.829,8.555,8.555,8.555c4.725,0,8.555-3.83,8.555-8.555C18.555,5.274,14.725,1.445,10,1.445 M10,17.654c-4.221,0-7.654-3.434-7.654-7.654c0-4.221,3.433-7.654,7.654-7.654c4.222,0,7.654,3.433,7.654,7.654C17.654,14.221,14.222,17.654,10,17.654 M14.39,10c0,0.248-0.203,0.45-0.45,0.45H6.06c-0.248,0-0.45-0.203-0.45-0.45s0.203-0.45,0.45-0.45h7.879C14.187,9.55,14.39,9.752,14.39,10 M14.39,12.702c0,0.247-0.203,0.449-0.45,0.449H6.06c-0.248,0-0.45-0.202-0.45-0.449c0-0.248,0.203-0.451,0.45-0.451h7.879C14.187,12.251,14.39,12.454,14.39,12.702 M14.39,7.298c0,0.248-0.203,0.45-0.45,0.45H6.06c-0.248,0-0.45-0.203-0.45-0.45s0.203-0.45,0.45-0.45h7.879C14.187,6.848,14.39,7.051,14.39,7.298">
+                                </path>
+                              </svg>
+                  </span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                   
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Self-Booking
+                      </a>
+                     
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="addbooking.html" target="_blank">Add Booking</a>
+                        <a class="dropdown-item" href="#">Active Unassigned</a>
+                        
+                        <a class="dropdown-item" href="#">Active Assigned</a>
+                        <a class="dropdown-item" href="#">Archived Unassigned</a>
+                        <a class="dropdown-item" href="#">Archived Assigned</a>
+                        <a class="dropdown-item" href="#">Cancelled</a>
+
+                      </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Client
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="addclient.html" target="_blank">Add Client</a>
+                              <a class="dropdown-item" href="#">View Client</a>
+                              
+                              
+      
+                            </div>
+                          </li>
+                          <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Driver
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="adddriver.html" target="_blank">Add Driver</a>
+                                  <a class="dropdown-item" href="#">View Driver</a>
+                                </div>
+                              </li>
+                              <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Taxis
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                      <a class="dropdown-item" href="addtaxis.html" target="_blank">Add Taxis</a>
+                                      <a class="dropdown-item" href="#">View Taxis</a>
+                                    </div>
+                                  </li>
+                                  <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Billing
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                          <a class="dropdown-item" href="#">Unbilled</a>
+                                          <a class="dropdown-item" href="#">Billed:Unpaid</a>
+                                          <a class="dropdown-item" href="#">Billed:Paid</a>
+                                          <a class="dropdown-item" href="self-billing.html" target="_blank">Client Self Billing</a>
+                                        </div>
+                                      </li>
+                                    <a href="support.html" target="_blank"><button class="custom-submit-btn btn btn-default">Support</button>    
+                                    </a>                
+                                      
+                  </ul>
+                       
+                       
+                </div>
+              </nav>
+              <!--/navigation-->
+
+    <div class="form-container">
+            <div class="formCreate__head">
+                    
+                 
+        <form id="addBookingForm" class="formCreate__form" method="post" action="">
+            <div class="formitem">
+                <label class="addbookinglabel">FLEET247 Support</label>
+               
+              </div>
+            </div><!--/form heads-->
+
+            <div class="formCreate__content grid-form-client-billing">
+                    
+                <div class="formCreate_form-group item ml mlb">
+                    <label>SELECT QUERY TYPE</label>
+                  <select class="form-control select2-drop" name="query_type" required>
+                    <option value="Technical">Techinical Issue</option>
+                    <option value="Others">Others</option>
+                  </select>
+                    
+                    </div>
+                  
+  
+                  <div class="formCreate_form-group item mlb">
+                    <label>DESCRIBE YOUR QUERY</label>
+                  <textarea class="form-control custom-textarea" name="operator_comment" required placeholder="Please provide us a brief about the issue you are facing so that our associate can assist you better."></textarea>
+                        </div>
+  
+                        <div class="formCreate_form-group item ml mlb">
+                            <label>CONTACT NO</label>
+                            <input type="text" pattern="[0-9]{10}" id="cno" name="contact_no" class="form-control" placeholder="Your Contact No" title="Please Enter a Valid Contact Number for the callback">
+                           
+                          </select>
+                            </div>
+  
+                            <div class="formCreate_form-group mlb">
+                                <label class="formCreate__label">SUBMIT QUERY</label>
+                                <input type="submit" class="btn-default form-control btn custom-submit-btn" value="Submit Query">
+                                </div>
+  
+                            </div><!--/formgrid-->
+
+                           
+                        </form>
+   
+                    </div>
+                  
+                    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<script src ="js/jquery.datetimepicker.full.min.js"></script>
+
+<script type="text/javascript">
+ $.datetimepicker.setLocale('en');
+
+$('.datetimepicker1').datetimepicker({
+ i18n:{
+  en:{
+   months:[
+    'January','February','March','April',
+    'May','June','July','August',
+    'September','October','November','December',
+   ],
+   dayOfWeek:[
+    "Su.", "Mo", "Tu", "We", 
+    "Th", "Fr", "Sa.",
+   ]
+  }
+ },
+ timepicker:false,
+ format:'d.m.Y'
+});
+        
+</script>
+</body>
+
+</html>
