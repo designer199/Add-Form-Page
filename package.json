@@ -1,0 +1,23 @@
+{
+  "name": "allforms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/designer199/Add-Form-Page.git"
+  },
+  "engines":{
+    "node":"8.10.0"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/designer199/Add-Form-Page/issues"
+  },
+  "homepage": "https://github.com/designer199/Add-Form-Page#readme"
+}
