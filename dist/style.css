@@ -6,59 +6,6 @@ body {
     font-weight: 400;
     background-color: #F0F0F7;
 }
-
-/***BROWSER SUPPORT FOR SELECT BOX******/
-select {
-    -moz-appearance:none; /* Firefox */
-    -webkit-appearance:none; /* Safari and Chrome */
-    appearance:none;
-}
-select:-moz-focusring {
-    color: transparent;
-    text-shadow: 0 0 0 #000;
-}
-option:not(:checked) {
-  color: black; /* prevent <option>s from becoming transparent as well */
-}
-.dropdown1
-{
-color: #767578;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.1em;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-  
-    background-image: url(../images/arrow.png);
-    background-repeat: no-repeat;
-    background-position: 95% 50%;
-}
-select:focus {
-    outline: none;
-}
-a:focus {
-    outline: none;
-}
-/*
-.select-box {
-    position: relative;
-    /*Don't really need this just for demo styling*
-    
-    
-  
-  }
-  .select-box:after {
- 
-    font-family: "Font Awesome 5 Free"; 
-    color: #0ebeff;
-    content: '\f13a';
-    right: 11px;
-    top: 6px;
-    height: 34px;
-    padding: 15px 0px 0px 8px;
-    border-left: 1px solid #0ebeff;
-    position: absolute;
-    pointer-events: none;
-}*/
 /****LOGO STYLES*****/
  /*#fh5co-logo {
     font-size: 24px;
