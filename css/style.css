@@ -6,6 +6,21 @@ body {
     font-weight: 400;
     background-color: #F0F0F7;
 }
+/****LOGO STYLES*****/
+ #fh5co-logo {
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:white;
+    font-family: "Open Sans", Arial, sans-serif;
+    line-height: 1.7;
+}
+.logo-dot
+{
+    color: #F73859;
+}
 .submitbtn
 {
     margin: 2% 0 2% 38%;
@@ -19,16 +34,25 @@ body {
 {
     background-image: linear-gradient(135deg, #6a81e9, #9c6cce);
 }
-.nav-link,.navbar-brand
+.nav-link
 {
     color:white;
     font-size: 18px;
 }
-.nav-link:hover,
-.navbar-brand:hover
+.navbar-brand
+{
+    color:white;
+    font-size: 24px;
+}
+.nav-link:hover
+
 {
     color:black;
 } 
+.navbar-brand:hover
+{
+    color:white;
+}
 .navbar-nav > li > .dropdown-menu {
      background-color:white;
      }
