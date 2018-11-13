@@ -7,7 +7,7 @@ body {
     background-color: #F0F0F7;
 }
 /****LOGO STYLES*****/
- #fh5co-logo {
+ /*#fh5co-logo {
     font-size: 24px;
     padding: 0;
     margin: 0;
@@ -20,7 +20,7 @@ body {
 .logo-dot
 {
     color: #F73859;
-}
+}*/
 .submitbtn
 {
     margin: 2% 0 2% 38%;
@@ -42,17 +42,16 @@ body {
 .navbar-brand
 {
     color:white;
-    font-size: 24px;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
 }
-.nav-link:hover
-
+.nav-link:hover,.navbar-brand:hover
 {
     color:black;
 } 
-.navbar-brand:hover
-{
-    color:white;
-}
+
 .navbar-nav > li > .dropdown-menu {
      background-color:white;
      }
