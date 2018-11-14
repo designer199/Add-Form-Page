@@ -23,6 +23,7 @@ select:-moz-focusring {
 option:not(:checked) {
   color: black; /* prevent <option>s from becoming transparent as well */
 }
+/*
 .dropdown1
 {
 color: #767578;
@@ -34,7 +35,7 @@ color: #767578;
     background-image: url(../images/arrow.png);
     background-repeat: no-repeat;
     background-position: 95% 50%;
-}
+}*/
 select:focus {
     outline: none;
 }

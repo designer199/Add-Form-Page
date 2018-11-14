@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/jquery.datetimepicker.min.css" /> 
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Add Booking</title>
@@ -137,8 +138,10 @@
                             <label class="ml-2">SELECT CLIENT*</label>
                             <select class="select-css select2-drop dropdown1" id="client" name="operator_client_id" required>
                               <option value="">Select Client Entity Name</option>
-                             
-                                <option value=""></option>
+                              <option value="">Travel Paro</option>
+                              <option value="">Taxi Vaxi Test</option>
+                              <option value="">Taxi Vaxi</option>
+                              
                             
                             </select>
                           </div>
@@ -212,12 +215,7 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
   <script src ="js/jquery.datetimepicker.full.min.js"></script>
-
-    <script type="text/javascript">
-      $(function () {
-          $('#datetimepicker1').datetimepicker();
-      });
-            
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+  <script src ="app.js"></script>
 </body>
 </html>

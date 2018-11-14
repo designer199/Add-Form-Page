@@ -11,8 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/jquery.datetimepicker.min.css" /> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Self Booking </title>
+    <title>Self Booking</title>
 </head>
 <body>
         <nav class="navbar navbar-expand-lg mb-3">
@@ -116,25 +117,25 @@
                     
                 <div class="formCreate_form-group item ml mlb">
                     <label>BOOKING DATE RANGE FROM</label>
-                    <input type='text' class=" datetimepicker1" id="" name="date-range-from" required /></label>
+                    <input type='text' class="datetimepicker1" id="" name="date-range-from" required /></label>
                     
                     </div>
                   
   
                   <div class="formCreate_form-group item mlb">
                     <label>BOOKING DATE RANGE TO</label>
-                      <input type='text' class=" datetimepicker1" id="" name="date-range-to" required />
+                      <input type='text' class="datetimepicker1" id="" name="date-range-to" required />
                         </div>
   
                         <div class="formCreate_form-group item ml mlb">
                           <label>CLIENT</label>
-                          <div class="select-box">
-                          <select class=" select2-drop dropdown1" id="client" name="client" required>
+                          
+                          <select class="select2-drop" id="client" name="client" required>
                           
                               <option value="{{ $client->id }}"></option>
                               
                           </select>
-                        </div>
+                    
                             </div>
   
                             <div class="formCreate_form-group mlb">
@@ -157,7 +158,8 @@ src="https://code.jquery.com/jquery-3.3.1.min.js"
 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 crossorigin="anonymous"></script>
 <script src ="js/jquery.datetimepicker.full.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+  
 <script type="text/javascript">
  $.datetimepicker.setLocale('en');
 
@@ -180,6 +182,7 @@ $('.datetimepicker1').datetimepicker({
 });
         
 </script>
+  <script src ="app.js"></script>
 </body>
 
 </html>
