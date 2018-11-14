@@ -8,7 +8,7 @@ body {
 }
 #user-empcode
 {
-    display:none;
+   font-size:10px;
 }
 /***BROWSER SUPPORT FOR SELECT BOX******/
 select {
@@ -383,7 +383,7 @@ transition: all .2s ease-in-out;
 @media screen and (min-width: 1028px) {
     #user-empcode
 {
-    display:inline-block;
+    font-size:14px;
 }
     .grid-form
     {
