@@ -6,7 +6,10 @@ body {
     font-weight: 400;
     background-color: #F0F0F7;
 }
-
+#user-empcode
+{
+    display:none;
+}
 /***BROWSER SUPPORT FOR SELECT BOX******/
 select {
     -moz-appearance:none; /* Firefox */
@@ -378,6 +381,10 @@ transition: all .2s ease-in-out;
         grid-gap:10px;
     }
 @media screen and (min-width: 1028px) {
+    #user-empcode
+{
+    display:inline-block;
+}
     .grid-form
     {
         display: grid;
