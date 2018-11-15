@@ -177,7 +177,7 @@ a:focus {
 }
 label {
    
-    max-width: 100%;
+   width: 100%;
 
     font-weight: bold;
 }
