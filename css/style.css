@@ -325,7 +325,7 @@ input {
   
    
 
-margin: 0 10px 0 10px;
+margin: 0 10px 0 5px;
 }
 .mri{
     padding-right:10px;
@@ -416,6 +416,7 @@ transition: all .2s ease-in-out;
     .driverVehicle__img
     {
         width: 85%;
+        margin: 0 10px 0 10px;
     } 
     .grid-item-grid
     {
