@@ -228,7 +228,7 @@ input {
 {
     display:inline;
 }
-.formCreate_form-group > label {
+ label {
     margin-bottom: 5px;
     font-size: 0.9rem;
 }
