@@ -6,6 +6,63 @@ body {
     font-weight: 400;
     background-color: #F0F0F7;
 }
+#user-empcode
+{
+   font-size:10px;
+}
+/***BROWSER SUPPORT FOR SELECT BOX******/
+select {
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+}
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+option:not(:checked) {
+  color: black; /* prevent <option>s from becoming transparent as well */
+}
+/*
+.dropdown1
+{
+color: #767578;
+    font-family: 'Lato', sans-serif;
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}*/
+select:focus {
+    outline: none;
+}
+a:focus {
+    outline: none;
+}
+/*
+.select-box {
+    position: relative;
+    /*Don't really need this just for demo styling*
+    
+    
+  
+  }
+  .select-box:after {
+ 
+    font-family: "Font Awesome 5 Free"; 
+    color: #0ebeff;
+    content: '\f13a';
+    right: 11px;
+    top: 6px;
+    height: 34px;
+    padding: 15px 0px 0px 8px;
+    border-left: 1px solid #0ebeff;
+    position: absolute;
+    pointer-events: none;
+}*/
 /****LOGO STYLES*****/
  /*#fh5co-logo {
     font-size: 24px;
@@ -37,7 +94,7 @@ body {
 .nav-link
 {
     color:white;
-    font-size: 18px;
+    font-size: 14px;
 }
 .navbar-brand
 {
@@ -72,17 +129,22 @@ body {
         background: linear-gradient(135deg, #ff4c9f, #ff7b74);
         border: 1px solid transparent;
         color: #fff;
+        -webkit-box-shadow: 0 2px 6px -2px #b92b24;
         box-shadow: 0 2px 6px -2px #b92b24;
+        -webkit-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out;
         font-weight: bold;
         letter-spacing: .06em;
     }
     .custom-submit-btn:focus {
+        -webkit-box-shadow: 0 4px 12px -5px #b92b24;
         box-shadow: 0 4px 12px -5px #b92b24;
         background: linear-gradient(135deg, #ff4c9f, #ff7b74);
         border: 1px solid transparent;
         color: #fff !important;
+        -webkit-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out;
+        -webkit-transform: translateY(-2px);
         transform: translateY(-2px);
     }
     /*FORM*/
@@ -100,7 +162,7 @@ body {
    
     
     border-radius: 3px;
-    width: 75%;
+    width: 85%;
 }
 
 .addbookinglabel {
@@ -115,7 +177,7 @@ body {
 }
 label {
    
-    max-width: 100%;
+   width: 100%;
 
     font-weight: bold;
 }
@@ -125,6 +187,7 @@ input {
  input,select,textarea{
      width:90%;
      background-color: transparent;
+    -webkit-box-shadow: none;
     box-shadow: none;
     margin-bottom: 0.5rem;
     height: auto;
@@ -143,8 +206,9 @@ input {
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
     -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
-    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
  }
  .emp-code
  {
@@ -164,7 +228,7 @@ input {
 {
     display:inline;
 }
-.formCreate_form-group > label {
+ label {
     margin-bottom: 5px;
     font-size: 0.9rem;
 }
@@ -261,7 +325,7 @@ input {
   
    
 
-margin: 0 10px 0 10px;
+margin: 0 10px 0 5px;
 }
 .mri{
     padding-right:10px;
@@ -283,6 +347,7 @@ margin: 0 10px 0 10px;
 position: relative;
 overflow: hidden;
 display: inline-block;
+-webkit-transition: all .2s ease-in-out;
 transition: all .2s ease-in-out;
 }
 
@@ -317,6 +382,10 @@ transition: all .2s ease-in-out;
         grid-gap:10px;
     }
 @media screen and (min-width: 1028px) {
+    #user-empcode
+{
+    font-size:14px;
+}
     .grid-form
     {
         display: grid;
@@ -347,6 +416,7 @@ transition: all .2s ease-in-out;
     .driverVehicle__img
     {
         width: 85%;
+        margin: 0 10px 0 10px;
     } 
     .grid-item-grid
     {

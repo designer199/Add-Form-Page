@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Assign</title>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg mb-3">
+            <div id="fh5co-logo"><a href="https://fleet247.in" target="_blank" class="navbar-brand">Fleet247<!--<span class ="logo-dot">.</span>--></a></div>
+               
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+                        <svg class="svg-icon" viewBox="0 0 20 20">
+                                <path d="M10,1.445c-4.726,0-8.555,3.829-8.555,8.555c0,4.725,3.829,8.555,8.555,8.555c4.725,0,8.555-3.83,8.555-8.555C18.555,5.274,14.725,1.445,10,1.445 M10,17.654c-4.221,0-7.654-3.434-7.654-7.654c0-4.221,3.433-7.654,7.654-7.654c4.222,0,7.654,3.433,7.654,7.654C17.654,14.221,14.222,17.654,10,17.654 M14.39,10c0,0.248-0.203,0.45-0.45,0.45H6.06c-0.248,0-0.45-0.203-0.45-0.45s0.203-0.45,0.45-0.45h7.879C14.187,9.55,14.39,9.752,14.39,10 M14.39,12.702c0,0.247-0.203,0.449-0.45,0.449H6.06c-0.248,0-0.45-0.202-0.45-0.449c0-0.248,0.203-0.451,0.45-0.451h7.879C14.187,12.251,14.39,12.454,14.39,12.702 M14.39,7.298c0,0.248-0.203,0.45-0.45,0.45H6.06c-0.248,0-0.45-0.203-0.45-0.45s0.203-0.45,0.45-0.45h7.879C14.187,6.848,14.39,7.051,14.39,7.298">
+                                </path>
+                              </svg>
+                  </span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" target="_blank">Dashboard</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                   
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Self-Booking
+                      </a>
+                     
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="addbooking.html" target="_blank">Add Booking</a>
+                        <a class="dropdown-item" href="#">Active Unassigned</a>
+                        
+                        <a class="dropdown-item" href="#">Active Assigned</a>
+                        <a class="dropdown-item" href="#">Archived Unassigned</a>
+                        <a class="dropdown-item" href="#">Archived Assigned</a>
+                        <a class="dropdown-item" href="#">Cancelled</a>
+
+                      </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Client
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="addclient.html" target="_blank">Add Client</a>
+                              <a class="dropdown-item" href="#">View Client</a>
+                              
+                              
+      
+                            </div>
+                          </li>
+                          <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Driver
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="adddriver.html" target="_blank">Add Driver</a>
+                                  <a class="dropdown-item" href="#">View Driver</a>
+                                </div>
+                              </li>
+                              <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Taxis
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                      <a class="dropdown-item" href="addtaxis.html" target="_blank">Add Taxis</a>
+                                      <a class="dropdown-item" href="#">View Taxis</a>
+                                    </div>
+                                  </li>
+                                  <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Billing
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                          <a class="dropdown-item" href="#">Unbilled</a>
+                                          <a class="dropdown-item" href="#">Billed:Unpaid</a>
+                                          <a class="dropdown-item" href="#">Billed:Paid</a>
+                                          <a class="dropdown-item" href="self-billing.html" target="_blank">Client Self Billing</a>
+                                        </div>
+                                      </li>
+                                      <a href="support.html" target="_blank"><button class="custom-submit-btn btn btn-default">Support</button>    
+                                      </a>                         
+                                                      
+                                                      
+                  </ul>
+                       
+                       
+                </div>
+              </nav>
+              <!--/navigation-->
+            
+              <div class="form-container">
+                    <div class="formCreate__head">
+                    
+                 
+                            <form id="addBookingForm" class="formCreate__form" method="post" action="">
+                                <div class="formitem">
+                                    <label class="addbookinglabel">BOOKING DETAILS</label>
+                                   
+                                  </div>
+                                </div>
+                       <div class="grid-booking-details">
+                           <div class="grid-item">
+                               <label class="mlb">BOOKING ID</label>
+                               <p class="mlb">TP244</p>
+                           </div>
+
+                           <div class="grid-item">
+                                <label>CLIENT</label>
+                                <p>TravelParo</p>
+                            </div>
+
+                            <div class="grid-item">
+                                    <label class="mlb">PICKUP LOCATION</label>
+                                    <p class="mlb">CP, New Delhi, Delhi, India</p>
+                                </div>
+                            <div class="grid-item">
+                                    <label>REASON FOR BOOKING</label>
+                                    <p>Testing</p>
+                            </div>
+                            <div class="grid-item">
+                                    <label class="mlb">BOOKING DATE | TIME</label>
+                                    <p class="mlb">10-08-2018 | 16:00</p>
+                            </div>   
+                            <div class="grid-item">
+                                    <label>TAXI TYPE</label>
+                                    <p>Sedan</p>
+                            </div>   
+                            <div class="grid-item">
+                                    <label class="mlb">DROP CITIES</label>
+                                    <p class="mlb">Haldwani</p>
+                            </div>   
+                            <div class="grid-item">
+                                    <label>COST CENTER CODE</label>
+                            </div>  
+                            <div class="grid-item">
+                                    <label class="mlb">PICKUP DATE | TIME</label>
+                                    <p class="mlb">10-08-2018 | 19:00</p>
+                            </div>    
+                            <div class="grid-item">
+                                    <label>TOUR TYPE</label>
+                                    <p>Outstation | 1 days</p>
+                            </div> 
+                            <div class="grid-item">
+                                    <label class="ml mlb">STATUS</label>
+                                    <p class="ml mlb">Booked</p>
+                            </div>          
+                       </div>
+                    </form>
+                      </div>
+                   
+                
+
+                <div class="form-container">
+                        <div class="formCreate__head">
+                        
+                     
+                                <form id="addBookingForm" class="formCreate__form" method="post" action="">
+                                    <div class="formitem">
+                                        <label class="addbookinglabel">PASSENGER DETAILS</label>
+                                       
+                                      </div>
+                                    </div>
+                           <div class="grid-booking-details">
+                               <div class="grid-item">
+                                   <label class="mlb">EMPLOYEE ID</label>
+                                   <p class="mlb">101</p>
+                               </div>
+    
+                               <div class="grid-item">
+                                    <label>NAME</label>
+                                    <p>Sandeep</p>
+                                </div>
+    
+                                <div class="grid-item">
+                                        <label class="mlb">EMAIL</label>
+                                        <p class="mlb">praveen@taxivaxi.com</p>
+                                    </div>
+                                <div class="grid-item">
+                                        <label>CONTACT</label>
+                                        <p>9899701993</p>
+                                </div>
+                               
+                           </div>
+                          </div>
+                       
+
+                          <div class="form-container">
+                                <div class="formCreate__head">
+                                
+                             
+                                        <form id="addBookingForm" class="formCreate__form" method="post" action="">
+                                            <div class="formitem">
+                                                <label class="addbookinglabel">CLIENT RATE DETAILS</label>
+                                               
+                                              </div>
+                                            </div>
+                                   <div class="grid-booking-details">
+                                       <div class="grid-item">
+                                           <label class="mlb">TOUR TYPE</label>
+                                           <p class="mlb">Outstation</p>
+                                       </div>
+            
+                                       <div class="grid-item">
+                                            <label>PACKAGE NAME</label>
+                                            <p>Outstation</p>
+                                        </div>
+            
+                                        <div class="grid-item">
+                                                <label class="mlb">KMS INCLUDED</label>
+                                                <p class="mlb">250</p>
+                                            </div>
+                                        <div class="grid-item">
+                                                <label>DRIVER ALLOWANCE</label>
+                                                <p>₹ 200</p>
+                                        </div>
+                                        <div class="grid-item">
+                                                <label class="mlb">TAXI TYPE</label>
+                                                <p class="mlb">Sedan</p>
+                                        </div>
+                                        <div class="grid-item">
+                                                <label>EXTRA KM RATE</label>
+                                                <p>₹ 10</p>
+                                        </div>
+                                        <div class="grid-item">
+                                                <label class="mlb">CITY</label>
+                                                <p class="mlb">New Delhi</p>
+                                        </div>
+                                        <div class="grid-item">
+                                                <label>BASE RATE</label>
+                                                <p>₹ 1500</p>
+                                        </div>
+
+                                       
+                                   </div>
+                                  </div>
+                                  <div class="form-container">
+                                        <div class="formCreate__head">
+                                        
+                                     
+                                                <form id="addBookingForm" class="formCreate__form" method="post" action="">
+                                                    <div class="formitem">
+                                                        <label class="addbookinglabel">ASSIGN BOOKING DETAILS</label>
+                                                       
+                                                      </div>
+                                                    </div>
+                                           <div class="grid-assign-booking-details">
+                                               <div class="grid-item">
+                                                   <label class="mlb">SELECT DRIVER </label>
+                                                   <select class="select-css select2-drop mlb"  style="width: 50%" id="driver" name="driver" required>
+                                                        <option value="">Select Driver</option>
+                                                                            <option value="75">ntest ntest | 9582058187</option>
+                                                                            <option value="34">sandeep Joshi | 9899701993</option>
+                                                                            <option value="37">Chetan Bansal | 9582058187</option>
+                                                                            <option value="42">Vinod Kumar | 9881102875</option>
+                                                                            <option value="43">Chetan Bansal | 9582058187</option>
+                                                                            <option value="44">Karan Goel | 9582058187</option>
+                                                                            <option value="66">bb bb | 4455443344</option>
+                                                                            <option value="71">test bansal td | 9582058187</option>
+                                                                            <option value="63">prashant sharma | 1234567651</option>
+                                                                        </select>
+                                                  <p class='mlb'> <a href ="" class="" data-toggle="modal" data-target=".modalAdd_driver">Add New Driver
+                                                </p>
+                                                  </a>                 
+                                               </div>
+                    
+                                               <div class="grid-item">
+                                                    <label>TAXI </label>
+                                                    <select class="select-css select2-drop" style="width: 50%" id="taxi" name="taxi" required>
+                                                            <option value="">Select Taxi</option>
+                                                                                <option value="64">Ford Figo | htest</option>
+                                                                                <option value="63">Ford Figo | ntest</option>
+                                                                                <option value="19">XUV | DL97869879</option>
+                                                                                <option value="21">XUV | X1X2</option>
+                                                                                <option value="56">Hyundai Elite-i20 | jhgjhk</option>
+                                                                                <option value="41">Ford Figo | HR26CB2341</option>
+                                                                                <option value="42">Ford Figo | HR26CB2347</option>
+                                                                                <option value="65">Hyundai Elite-i20 | 12345</option>
+                                                                            </select>
+                                                                            <p class='mlb'><a href="" class ="" data-toggle="modal" data-target=".modalAddtaxi">Add New Taxi</p></a>                       
+                                                </div>
+                                                                                       
+                                        </div>
+                                        <input type="submit" value="submit" class="formCreate__input custom-submit-btn btn submitbtn"> 
+                                           </div>
+                                       <!-- Modal for add new driver -->
+<div class="modal fade modalAdd_driver" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel1">ADD DRIVER DETAILS</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              
+                    
+                    <form method="post" id="cancel-form"  action="/operator/self-bookings/271/cancel/Archived Unassigned Bookings">
+                      <div class="grid-modal-add-driver">
+                              <div class="grid-item">
+                                <label>FIRST NAME*</label>
+                                <input type="text" placeholder="First Name" pattern="[A-Za-z\s]{1,15}"  id="add_driver_first_name" name="first_name" required="" title="Can contain uppercase &amp; lowercase letters">
+                              </div>
+                              <div class="grid-item">
+                                <label>LAST NAME*</label>
+                                <input type="text" placeholder="Last Name" pattern="[A-Za-z\s]{1,15}"  id="add_driver_last_name" name="last_name" required="" title="Can contain uppercase &amp; lowercase letters">
+                              </div>
+                        <div class="grid-item">
+                                <label>PHONE*</label>
+                                <input type="text" placeholder="Your Phone Number" pattern="[0-9]{10}"  id="add_driver_contact_no" name="contact_no" required="" title="Should contain 10 Digits">
+                         </div>    
+                         <div class="grid-item">
+                                <label>EMAIL</label>
+                                <input type="text" placeholder="Your Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,3}$"  id="add_driver_email" name="email" title="Should be of the format: abc@xyz.com">
+                         </div>    
+                         <div class="grid-item">
+                                <label>LICENCE NUMBER*</label>
+                                <input type="text" placeholder="License Number" pattern="[a-zA-Z0-9]+"  id="add_driver_licence_number" name="licence_number" required="" title="Can contain numbers, uppercase, lowercase letters">
+                         </div>    
+                      </div>
+                      <input type="submit" value="submit" class="formCreate__input custom-submit-btn btn submitbtn">
+                    </form>
+                 
+                 
+                      
+                    
+            </div>
+          </div>
+        </div>
+      </div> <!-- /Modal for add new driver -->
+
+                  <!-- Modal for add new taxi -->
+<div class="modal fade modalAddtaxi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel3">ADD TAXI DETAILS</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" id="addnewtaxi"  action="/operator/self-bookings/271/cancel/Archived Unassigned Bookings">
+                        <div class="grid-modal-add-driver">
+                                <div class="grid-item">
+                                  <label>TAXI MODEL*</label>
+                                  <select class="select2-drop" name="taxi_model_id" required>
+                                          
+                                        <option value="">Ford-Figo</option>
+                                        <option value="">Hyundai Elite i-20</option>
+                                        <option value="">Hyundai Grand i-10</option>
+                                    </select>          
+                                </div>
+                                <div class="grid-item">
+                                        <label>MAKE YEAR*</label>
+                                        <input type="text" placeholder="MAKE YEAR" pattern="[0-9]{4}" class="" required name="make_year" title="Should be of the format: 20xx or 19xx">
+                                </div>
+                          <div class="grid-item">
+                                <label>REGISTRATION NUMBER*</label>
+                                <input type="text" placeholder="Registration Number" pattern="[a-zA-Z0-9\s]+" class="" name="registration_number" required title="Can contain numbers, uppercase, lowercase letters">
+                           </div>   
+                        </div>
+                        <input type="submit" value="submit" class="formCreate__input custom-submit-btn btn submitbtn">
+                      </form>
+                   
+                   
+               
+                    
+            </div>
+          </div>
+        </div>
+      </div> <!-- /Modal for add new taxi -->                                        
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+  <script type="text/javascript">
+  
+  
+  $("select").select2({
+    width: 'resolve' // need to override the changed default
+  });
+  </script>
+</body>
+</html>                               

@@ -1,3 +1,12 @@
+a {
+    text-decoration: none;
+}
+a:hover
+  {
+    text-decoration:none;
+    cursor:pointer;
+   }
+
 body {
     font-family: 'Titillium Web', sans-serif;
     /*font-family: 'Titillium Web','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
@@ -10,10 +19,11 @@ body {
 {
    font-size:10px;
 }
+
 /***BROWSER SUPPORT FOR SELECT BOX******/
-select {
-    -moz-appearance:none; /* Firefox */
-    -webkit-appearance:none; /* Safari and Chrome */
+/*select {
+    -moz-appearance:none; /* Firefox 
+    -webkit-appearance:none;  Safari and Chrome 
     appearance:none;
 }
 select:-moz-focusring {
@@ -21,12 +31,12 @@ select:-moz-focusring {
     text-shadow: 0 0 0 #000;
 }
 option:not(:checked) {
-  color: black; /* prevent <option>s from becoming transparent as well */
-}
+  color: black; /* prevent <option>s from becoming transparent as well 
+}*/
 /*
 .dropdown1
 {
-color: #767578;
+
     font-family: 'Lato', sans-serif;
     
     -webkit-appearance: none;
@@ -35,7 +45,7 @@ color: #767578;
     background-image: url(../images/arrow.png);
     background-repeat: no-repeat;
     background-position: 95% 50%;
-}*/
+}
 select:focus {
     outline: none;
 }
@@ -82,6 +92,7 @@ a:focus {
 {
     margin: 2% 0 2% 38%;
 }
+
 .nav-logo
 {
     height:60px;
@@ -162,7 +173,7 @@ a:focus {
    
     
     border-radius: 3px;
-    width: 85%;
+    width: 95%;
 }
 
 .addbookinglabel {
@@ -381,7 +392,65 @@ transition: all .2s ease-in-out;
         grid-template-columns: 1fr;
         grid-gap:10px;
     }
+ /*TABLE STYLES FOR ACTIVE UNASSIGNED BOOKINGS****/
+ th{
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    width:100%;
+    border-bottom: 1px solid #ccc;
+ }   
+ /*SVG STYLE FOR I IN ACTIVE UNASSIGNED PAGE****/
+ .fa-info {
+    color: #43425d;
+    width:30px;
+    height:30px;
+}
+.trash{
+    color: #e74c3c;
+    width:30px;
+    height:30px;
+}
+/* Modal styles */
+.modal-title {
+    margin: 0;
+    font-size: 14px;
+    display: inline-block;
+    font-weight: bold;
+}
+.modal-yes
+{
+    margin-left: 10px;
+}
+.modal-button
+{
+    width: 47%;
+}
+.close-button
+{
+    font-weight: bold;
+}
+/*MODAL STYLES FOR ADD TAXI*/
+.grid-modal-add-driver
+{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+/*BOOKING DETAILS CSS */
+.grid-booking-details,.grid-assign-booking-details
+{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+
 @media screen and (min-width: 1028px) {
+ /*MODAL STYLES FOR ADD TAXI*/
+.grid-modal-add-driver
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}   
     #user-empcode
 {
     font-size:14px;
@@ -436,4 +505,15 @@ transition: all .2s ease-in-out;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+    /*BOOKING DETAILS CSS */
+.grid-booking-details
+{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.grid-assign-booking-details
+{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 }
