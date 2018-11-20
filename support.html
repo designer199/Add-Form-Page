@@ -117,7 +117,7 @@
                     
                 <div class="formCreate_form-group item ml mlb">
                     <label>SELECT QUERY TYPE</label>
-                  <select class="form-control select2-drop" name="query_type" required>
+                  <select class="form-control select2-drop" style="width: 50%" name="query_type" required>
                     <option value="Technical">Techinical Issue</option>
                     <option value="Others">Others</option>
                   </select>
@@ -134,7 +134,6 @@
                             <label>CONTACT NO</label>
                             <input type="text" pattern="[0-9]{10}" id="cno" name="contact_no" class="form-control" placeholder="Your Contact No" title="Please Enter a Valid Contact Number for the callback">
                            
-                          </select>
                             </div>
   
                             <div class="formCreate_form-group mlb">
@@ -178,9 +177,11 @@ $('.datetimepicker1').datetimepicker({
  timepicker:false,
  format:'d.m.Y'
 });
-        
+$("select").select2({
+    width: 'resolve' // need to override the changed default
+  });      
 </script>
-<script src ="js/app.js"></script>
+
 </body>
 
 </html>

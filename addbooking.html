@@ -136,7 +136,7 @@
 
                       <div class="formCreate_form-group item ml mlb">
                             <label>SELECT CLIENT*</label>
-                            <select class="select-css select2-drop dropdown1" id="client" name="operator_client_id" required>
+                            <select class="select-css select2-drop dropdown1" style="width: 70%" id="client" name="operator_client_id" required>
                               <option value="">Select Client Entity Name</option>
                               <option value="">Travel Paro</option>
                               <option value="">Taxi Vaxi Test</option>
@@ -149,14 +149,14 @@
                           <div class="formCreate_form-group mlb">
                                 <label>USERS*</label>
                                
-                                <select class="select-css select2-custom-users dropdown1" id="users" name="users[]" required>
+                                <select class="select-css select2-custom-users dropdown1" style="width: 70%" id="users" name="users[]" required>
                                         <option id="user-empcode" value ="" style="font-size: 10px">Empcode-name-contact-email</option>
                                 </select>
                               </div>
 
                               <div class="formCreate_form-group ml mlb">
                                     <label>PICKUP CITY*</label>
-                                    <select class="select-css select2-drop dropdown1" id="city" name="pickup_city_id" required>
+                                    <select class="select-css select2-drop dropdown1"style="width: 70%" id="city" name="pickup_city_id" required>
                                       <option value="">Select Pickup City</option>
                                     </select>
                                   </div>
@@ -179,21 +179,21 @@
                                               
                                               <div class="formCreate_form-group ml mlb">
                                                     <label>TAXI TYPE*</label>
-                                                    <select class="select-css select2-drop dropdown1" id="taxi" name="taxi_type_id" required>
+                                                    <select class="select-css select2-drop dropdown1" style="width: 70%" id="taxi" name="taxi_type_id" required>
                                                       <option>Select Taxi Type</option>
                                                     </select>
                                                   </div>
 
                                                   <div class="formCreate_form-group mlb ml">
                                                         <label>TOUR TYPE*</label>
-                                                        <select class="select-css select2-drop dropdown1" id="tour" name="tour_type_id" required>
+                                                        <select class="select-css select2-drop dropdown1" style="width: 70%" id="tour" name="tour_type_id" required>
                                                           <option>Select Tour Type</option>
                                                         </select>
                                                       </div>
 
                                                       <div class="formCreate_form-group ml mlb">
                                                             <label>PACKAGE*</label>
-                                                            <select class="select-css select2-drop dropdown1" id="package" name="operator_client_rate_id" required>
+                                                            <select class="select-css select2-drop dropdown1" style="width: 70%" id="package" name="operator_client_rate_id" required>
                                                               <option>Select Package Type</option>
                                                             </select>
                                                           </div>
@@ -221,6 +221,10 @@
   <script type="text/javascript">
   
   $('#datetimepicker1').datetimepicker();
+
+  $("select").select2({
+    width: 'resolve' // need to override the changed default
+  });
   </script>
 </body>
 </html>

@@ -130,7 +130,7 @@
                         <div class="formCreate_form-group item ml mlb">
                           <label>CLIENT</label>
                           
-                          <select class="select2-drop" id="client" name="client" required>
+                          <select class="select2-drop" style="width: 50%" id="client" name="client" required>
                           
                               <option value="{{ $client->id }}"></option>
                               
@@ -178,9 +178,14 @@ $('.datetimepicker1').datetimepicker({
  timepicker:false,
  format:'d.m.Y'
 });
-        
-</script>
-  <script src ="js/app.js"></script>
+
+  
+  
+  $("select").select2({
+    width: 'resolve' // need to override the changed default
+  });
+  </script>
+ 
 </body>
 
 </html>
