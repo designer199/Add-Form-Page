@@ -441,7 +441,7 @@ transition: all .2s ease-in-out;
 .grid-booking-details,.grid-assign-booking-details
 {
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 
