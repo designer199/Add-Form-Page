@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Details</title>
+    <title>Cancelled Details</title>
 </head>
 <body>
         <nav class="navbar navbar-expand-lg mb-3">
@@ -46,7 +46,7 @@
                         <a class="dropdown-item" href="activeassigned.html"  target="_blank">Active Assigned</a>
                         <a class="dropdown-item" href="archivedunassigned.html"  target="_blank">Archived Unassigned</a>
                         <a class="dropdown-item" href="archivedassigned.html"  target="_blank">Archived Assigned</a>
-                        <a class="dropdown-item" href="#">Cancelled</a>
+                        <a class="dropdown-item" href="cancelledbookings.html" target="_blank">Cancelled</a>
 
                       </div>
                     </li>
@@ -146,6 +146,7 @@
                             </div>   
                             <div class="grid-item">
                                     <label class="mlb ml">COST CENTER CODE</label>
+                                    <p class="mlb">12345</p>
                             </div>  
                             <div class="grid-item">
                                     <label class="mlb">PICKUP DATE | TIME</label>
@@ -157,8 +158,16 @@
                             </div> 
                             <div class="grid-item">
                                     <label class="ml mlb">STATUS</label>
-                                    <p class="ml mlb">Booked</p>
-                            </div>          
+                                    <p class="ml mlb">Cancelled</p>
+                            </div>  
+                            <div class="grid-item">
+                                <label class="ml mlb">CANCELLATION DATETIME</label>
+                                <p class="ml mlb">2018-11-19 12:54:30</p>
+                        </div>  
+                        <div class="grid-item">
+                            <label class="ml mlb">CANCELLATION REASON</label>
+                            <p class="ml mlb">Not feeling well</p>
+                    </div>            
                        </div>
                     </form>
                       </div>
@@ -248,194 +257,7 @@
                                        
                                    </div>
                                   </div>
-                                  <div class="form-container">
-                                        <div class="formCreate__head">
-                                        
-                                     
-                                                <form id="addBookingForm" class="formCreate__form" method="post" action="">
-                                                    <div class="formitem">
-                                                        <label class="addbookinglabel">DRIVER - TAXI DETAILS</label>
-                                                       
-                                                      </div>
-                                                    </div>
-                                           <div class="grid-driver-taxi-details">
-                                               <div class="grid-item">
-                                                   <label class="mlb">DRIVER NAME</label>
-                                                  <p class="mlb">sandeep Joshi</p>
-                                                                
-                                               </div>
-                                               <div class="grid-item">
-                                                    <label class="mlb">DRIVER CONTACT</label>
-                                                   <p class="mlb">9899701993</p>
-                                                                 
-                                                </div>
-                                               <div class="grid-item">
-                                                <label class="mlb">DRIVER EMAIL</label>    
-                                                <p class="mlb">joshisandeep2010@gmail.com</p>                            
-                                                </div>
-                                                
-                                                <div class="grid-item">
-                                                    <label class="mlb">TAXI TYPE</label>    
-                                                    <p class="mlb">SUV</p>                            
-                                                </div>
-                                                <div class="grid-item">
-                                                        <label class="mlb">TAXI MODEL</label>    
-                                                        <p class="mlb">XUV</p>                            
-                                                </div>  
-                                                <div class="grid-item">
-                                                        <label class="mlb">TAXI REG NO</label>    
-                                                        <p class="mlb">DL97869879</p>                            
-                                                </div>                                                       
-                                        </div>
-                                        
-                                           </div>
-
-                                           <div class="form-container">
-                                                <div class="formCreate__head">
-                                                
-                                             
-                                                        <form id="addBookingForm" class="formCreate__form" method="post" action="">
-                                                            <div class="formitem">
-                                                                <label class="addbookinglabel">ADD INVOICE</label>
-                                                               
-                                                              </div>
-                                                            </div>
-                                                   
-                                                       
-                                                           <label class="mlb"><u>DATE / TIME DETAILS</u></label>
-                                                           <div class="grid-booking-details">
-                                                       <div class="grid-item">
-                                                            <label class="mlb">PICKUP DATE</label>
-                                                            <input type="text" class="datetimepicker1 mlb" id="" name="date-range-to" required="">
-                                                                         
-                                                        </div>
-                                                       <div class="grid-item">
-                                                        <label class="mlb">PICKUP TIME</label>    
-                                                        <input type="text" class="timepicker mlb" id="" name="time" required="">                          
-                                                        </div>
-                                                        
-                                                        <div class="grid-item">
-                                                            <label class="mlb">DROP DATE</label>    
-                                                            <input type="text" class="datetimepicker1 mlb" id="" name="date-upto" required="">                        
-                                                        </div>
-                                                        <div class="grid-item">
-                                                                <label class="mlb">DROP TIME</label>    
-                                                                <input type="text" class="timepicker mlb" id="" name="time" required="">                              
-                                                        </div>  
-                                                                                                             
-                                                </div>
-
-                                                <label class="mlb mt-1"><u>KM USAGE DETAILS</u></label>
-                                                <div class="grid-booking-details">
-                                            <div class="grid-item">
-                                                 <label class="mlb">DAYS DONE</label>
-                                                 <input type="text" class="disabled mlb" id="hrs_done" name="hrs_done" required="" readonly="">
-                                            </div>
-                                            <div class="grid-item">
-                                             <label class="mlb">START KMS</label>    
-                                             <input type="text" class="mlb" id="start_km" name="start_km" required="">                      
-                                             </div>
-                                             
-                                             <div class="grid-item">
-                                                 <label class="mlb">END KMS</label>    
-                                                 <input type="text" class="mlb" id="end_km" name="end_km" required="">                      
-                                             </div>
-                                             <div class="grid-item">
-                                                     <label class="mlb">KMS DONE</label>    
-                                                     <input type="text" class="disabled mlb" id="kms_done" name="kms_done" required="" readonly="">                             
-                                             </div>  
-                                                                                                  
-                                     </div>
-
-                                     <label class="mlb mt-1"><u>EXTRA KM DETAILS</u></label>
-                                     <div class="grid-booking-details">
-                                 <div class="grid-item">
-                                      <label class="mlb">RATE/ EXTRA KM</label>
-                                      <input type="text" class="mlb disabled" id="km_rate" name="km_rate" value="10" required="" readonly="">
-                                 </div>
-                                 <div class="grid-item">
-                                  <label class="mlb">PACKAGE KMS</label>    
-                                  <input type="text" class="disabled" id="allowed_kms" name="allowed_kms" required="" readonly="">                   
-                                  </div>
-                                  
-                                  <div class="grid-item">
-                                      <label class="mlb">EXTRA KMS</label>    
-                                      <input type="text" class="disabled mlb" id="extra_kms" name="extra_kms" required="" readonly="">                   
-                                  </div>
-                                  <div class="grid-item">
-                                          <label class="mlb">EXTRA CHARGE FOR KMS</label>    
-                                          <input type="text" class="disabled" id="extra_kms_charge" name="extra_kms_charge" required="" readonly="">                            
-                                  </div>  
-                                                                                       
-                          </div>
-
-                          <label class="mlb mt-1"><u>EXTRA HOURS USAGE</u></label>
-                          <div class="grid-booking-details">
-                      <div class="grid-item">
-                           <label class="mlb">DRIVER ALLOWANCE PER DAY</label>
-                           <input type="text" class="mlb" id="driver_allowance_per_day" name="driver_allowance_per_day" value="200" required="" readonly="">
-                      </div>
-                      <div class="grid-item">
-                       <label class="mlb">DRIVER ALLOWANCE</label>    
-                       <input type="text" class="disabled mlb" id="driver_allowance" name="driver_allowance" required="" readonly="">                   
-                       </div>
-                       
-                       <div class="grid-item">
-                           <label class="mlb">BASE RATE PER DAY</label>    
-                           <input type="text" class="disabled mlb" id="base_rate_per_day" name="base_rate_per_day" value="1500" required="" readonly="">                  
-                       </div>
-                       <div class="grid-item">
-                               <label class="mlb">BASE RATE</label>    
-                               <input type="text" class="mlb disabled" id="base_rate" name="base_rate" value="1500" required="" readonly="">                         
-                       </div>  
-                                                                            
-               </div>
-               <label class="mlb"><u>INVOICE DETAILS</u></label>
-               <div class="grid-booking-details">
-           <div class="grid-item">
-                <label class="mlb">STATE TAX</label>
-                <input type="text" class="mlb" id="state_tax" name="state_tax" required="">
-           </div>
-           <div class="grid-item">
-            <label class="mlb">PARKING</label>    
-            <input type="text" class="mlb" id="parking" name="parking" required="">                
-            </div>
-            
-            <div class="grid-item">
-                <label class="mlb">TOLL TAX</label>    
-                <input type="text" class="mlb" id="toll_tax" name="toll_tax" required="">              
-            </div>
-            <div class="grid-item">
-                    <label class="mlb">EXTRAS</label>    
-                    <input type="text" class="mlb" id="extras" name="extras" required="">                       
-            </div>  
-            <div class="grid-item">
-                    <label class="mlb">TOTAL EXCLUDING TAX</label>    
-                    <input type="text" class="disabled mlb" id="total_ex_tax" name="total_ex_tax" required="" readonly="">                     
-            </div> 
-            <div class="grid-item">
-                    <label class="mlb">TAX RATE</label>    
-                    <select id="tax_rate" class="mlb" name="tax_rate" required="">
-                            <option value="0">0</option>
-                            <option value="5">5</option>
-                            <option value="12">12</option>
-                            <option value="18">18</option>
-                            <option value="28">28</option>
-                          </select>                   
-            </div>   
-            <div class="grid-item">
-                    <label class="mlb">TAX</label>    
-                    <input type="text" class="disabled mlb" id="tax" name="tax" required="" readonly="">
-            </div>   
-            <div class="grid-item">
-                    <label class="mlb">TOTAL AFTER TAX</label>    
-                    <input type="text" class="disabled mlb" id="total_after_tax" name="total_after_tax" required="" readonly="">
-            </div>                                                        
-    </div>
-                                                <input type="submit" value="submit" class="formCreate__input custom-submit-btn btn submitbtn"> 
-                                                   </div>  
-                                       
-                                                                                     
+                                                              
  <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

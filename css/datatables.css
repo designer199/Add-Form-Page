@@ -236,10 +236,10 @@ table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child {
 }
 table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child:before,
 table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:before {
-  top: 33%;
+  top: 41%;
   left: 4px;
-  height: 14px;
-  width: 14px;
+  height: 12px;
+  width: 12px;
   display: block;
   position: absolute;
   color: white;

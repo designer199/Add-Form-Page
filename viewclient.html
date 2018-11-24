@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/datatables.css">
+    <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap4.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
+  
+  
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>View Clients</title>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg mb-3">
+            <div id="fh5co-logo"><a href="index.html" target="_blank" class="navbar-brand">Fleet247<!--<span class ="logo-dot">.</span>--></a></div>
+               
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+                        <svg class="svg-icon" viewBox="0 0 20 20">
+                                <path d="M10,1.445c-4.726,0-8.555,3.829-8.555,8.555c0,4.725,3.829,8.555,8.555,8.555c4.725,0,8.555-3.83,8.555-8.555C18.555,5.274,14.725,1.445,10,1.445 M10,17.654c-4.221,0-7.654-3.434-7.654-7.654c0-4.221,3.433-7.654,7.654-7.654c4.222,0,7.654,3.433,7.654,7.654C17.654,14.221,14.222,17.654,10,17.654 M14.39,10c0,0.248-0.203,0.45-0.45,0.45H6.06c-0.248,0-0.45-0.203-0.45-0.45s0.203-0.45,0.45-0.45h7.879C14.187,9.55,14.39,9.752,14.39,10 M14.39,12.702c0,0.247-0.203,0.449-0.45,0.449H6.06c-0.248,0-0.45-0.202-0.45-0.449c0-0.248,0.203-0.451,0.45-0.451h7.879C14.187,12.251,14.39,12.454,14.39,12.702 M14.39,7.298c0,0.248-0.203,0.45-0.45,0.45H6.06c-0.248,0-0.45-0.203-0.45-0.45s0.203-0.45,0.45-0.45h7.879C14.187,6.848,14.39,7.051,14.39,7.298">
+                                </path>
+                              </svg>
+                  </span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" target="_blank">Dashboard</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                   
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Self-Booking
+                      </a>
+                     
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="addbooking.html" target="_blank">Add Booking</a>
+                        <a class="dropdown-item" href="activeunassigned.html" target="_blank">Active Unassigned</a>
+                        
+                        <a class="dropdown-item" href="activeunassigned.html" target="_blank">Active Assigned</a>
+                        <a class="dropdown-item" href="archivedunassigned.html"  target="_blank">Archived Unassigned</a>
+                        <a class="dropdown-item" href="archivedassigned.html" target="_blank" >Archived Assigned</a>
+                        <a class="dropdown-item" href="cancelledbookings.html"  target="_blank">Cancelled</a>
+
+                      </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Client
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="addclient.html" target="_blank">Add Client</a>
+                              <a class="dropdown-item" href="viewclient.html" target="_blank">View Client</a>
+                              
+                              
+      
+                            </div>
+                          </li>
+                          <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Driver
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="adddriver.html" target="_blank">Add Driver</a>
+                                  <a class="dropdown-item" href="#">View Driver</a>
+                                </div>
+                              </li>
+                              <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Taxis
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                      <a class="dropdown-item" href="addtaxis.html" target="_blank">Add Taxis</a>
+                                      <a class="dropdown-item" href="#">View Taxis</a>
+                                    </div>
+                                  </li>
+                                  <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Billing
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                          <a class="dropdown-item" href="#">Unbilled</a>
+                                          <a class="dropdown-item" href="#">Billed:Unpaid</a>
+                                          <a class="dropdown-item" href="#">Billed:Paid</a>
+                                          <a class="dropdown-item" href="self-billing.html" target="_blank">Client Self Billing</a>
+                                        </div>
+                                      </li>
+                                      <a href="support.html" target="_blank"><button class="custom-submit-btn btn btn-default">Support</button>    
+                                      </a>                         
+                                                      
+                                                      
+                  </ul>
+                       
+                       
+                </div>
+              </nav>
+              <!--/navigation-->
+              <div class="form-container">
+                <div class="formCreate__head">
+                        
+                     
+            <!--<form id="addBookingForm" class="formCreate__form" method="post" action="">-->
+                <div class="formitem">
+                    <label class="addbookinglabel">CLIENTS</label>
+                   
+                  </div>
+                </div><!--/head-->
+          
+                <table id="table_id" class="row-border" width="100%">
+                    <thead>
+                        <tr>
+                            <th>CLIENT ENTITY NAME</th>
+                            <th>CLIENT CODE</th>
+                            <th>OWNER NAME</th>
+                            <th>OWNER CONTACT NUMBER</th>
+                            <th>OWNER EMAIL</th>
+                            <th>TRIP DETAILS</th>
+                            <th>CONTACTS</th>
+                            <th>RATES</th>
+                            <th>USERS</th>
+                            <th>DETAILS</th>
+                            <th>ANALYTICS</th>
+                            <th>STATUS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>TravelParo</td>
+                            <td>TP</td>
+                            <td>Neeraj</td>
+                            <td>7676565487</td>
+                            <td>neeraj.tayal@gmail.com</td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/operator/clients/1/trips">
+                                <svg class="svg-inline--fa fa-suitcase fa-w-16 suitcase" aria-hidden="true" data-prefix="fas" data-icon="suitcase" role="img" xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" 
+                                 d="M96 480h320V128h-32V80c0-26.51-21.49-48-48-48H176c-26.51 0-48 21.49-48 48v48H96v352zm96-384h128v32H192V96zm320 80v256c0 26.51-21.49 48-48 48h-16V128h16c26.51 0 48 21.49 48 48zM64 480H48c-26.51 0-48-21.49-48-48V176c0-26.51 21.49-48 48-48h16v352z"></path></svg>
+                                </a></td>
+                            <td class="users-col" style="">
+                                    <a href="http://127.0.0.1:8000/operator/clients/1/contacts">
+                                      <img src="images/users.svg">
+                                    </a>
+                                  </td>
+                            
+                                    <td class="rates-col" style="">
+                                            <a href="http://127.0.0.1:8000/operator/clients/1/rates">
+                                              <svg class="svg-inline--fa fa-rupee-sign fa-w-10 rupee" aria-hidden="true" data-prefix="fas" data-icon="rupee-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M308 96c6.627 0 12-5.373 12-12V44c0-6.627-5.373-12-12-12H12C5.373 32 0 37.373 0 44v44.748c0 6.627 5.373 12 12 12h85.28c27.308 0 48.261 9.958 60.97 27.252H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h158.757c-6.217 36.086-32.961 58.632-74.757 58.632H12c-6.627 0-12 5.373-12 12v53.012c0 3.349 1.4 6.546 3.861 8.818l165.052 152.356a12.001 12.001 0 0 0 8.139 3.182h82.562c10.924 0 16.166-13.408 8.139-20.818L116.871 319.906c76.499-2.34 131.144-53.395 138.318-127.906H308c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-58.69c-3.486-11.541-8.28-22.246-14.252-32H308z"></path></svg><!-- <i class="fas fa-rupee-sign"></i> -->
+                                            </a>
+                                          </td>
+                        
+                            <td class="users-col" style="">
+                                    <a href="http://127.0.0.1:8000/operator/clients/1/users">
+                                      <svg class="svg-inline--fa fa-users fa-w-20 users" 
+                                      aria-hidden="true" data-prefix="fas" data-icon="users" 
+                                      role="img" xmlns="http://www.w3.org/2000/svg" 
+                                      viewBox="0 0 640 512" data-fa-i2svg="">
+                                      <path fill="currentColor" d="M320 64c57.99 0 105 47.01 105 105s-47.01 105-105 105-105-47.01-105-105S262.01 64 320 64zm113.463 217.366l-39.982-9.996c-49.168 35.365-108.766 27.473-146.961 0l-39.982 9.996C174.485 289.379 152 318.177 152 351.216V412c0 19.882 16.118 36 36 36h264c19.882 0 36-16.118 36-36v-60.784c0-33.039-22.485-61.837-54.537-69.85zM528 300c38.66 0 70-31.34 70-70s-31.34-70-70-70-70 31.34-70 70 31.34 70 70 70zm-416 0c38.66 0 70-31.34 70-70s-31.34-70-70-70-70 31.34-70 70 31.34 70 70 70zm24 112v-60.784c0-16.551 4.593-32.204 12.703-45.599-29.988 14.72-63.336 8.708-85.69-7.37l-26.655 6.664C14.99 310.252 0 329.452 0 351.477V392c0 13.255 10.745 24 24 24h112.169a52.417 52.417 0 0 1-.169-4zm467.642-107.09l-26.655-6.664c-27.925 20.086-60.89 19.233-85.786 7.218C499.369 318.893 504 334.601 504 351.216V412c0 1.347-.068 2.678-.169 4H616c13.255 0 24-10.745 24-24v-40.523c0-22.025-14.99-41.225-36.358-46.567z"></path></svg><!-- <i class="fas fa-users"></i> -->
+                                    </a>
+                                  </td>
+                            <td class="details-col">
+                              <a href="http://127.0.0.1:8000/operator/clients/1/show">
+                                <svg class="svg-inline--fa fa-info fa-w-6" aria-hidden="true" data-prefix="fas" data-icon="info" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512" data-fa-i2svg=""><path fill="currentColor" d="M20 424.229h20V279.771H20c-11.046 0-20-8.954-20-20V212c0-11.046 8.954-20 20-20h112c11.046 0 20 8.954 20 20v212.229h20c11.046 0 20 8.954 20 20V492c0 11.046-8.954 20-20 20H20c-11.046 0-20-8.954-20-20v-47.771c0-11.046 8.954-20 20-20zM96 0C56.235 0 24 32.235 24 72s32.235 72 72 72 72-32.235 72-72S135.764 0 96 0z"></path></svg><!-- <i class="fas fa-info"></i> -->
+                              </a>
+                            </td>
+                            <td class="details-col" style="">
+                              <a href="http://127.0.0.1:8000/operator/clients/1/analytics">
+                                <svg class="svg-inline--fa fa-chart-line fa-w-16 chart-line" aria-hidden="true" data-prefix="fas" data-icon="chart-line" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M500 384c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v308h436zM456 96H344c-21.4 0-32.1 25.9-17 41l32.9 32.9-72 72.9-55.6-55.6c-4.7-4.7-12.2-4.7-16.9 0L96.4 305c-4.7 4.6-4.8 12.2-.2 16.9l28.5 29.4c4.7 4.8 12.4 4.9 17.1.1l82.1-82.1 55.5 55.5c4.7 4.7 12.3 4.7 17 0l109.2-109.2L439 249c15.1 15.1 41 4.4 41-17V120c0-13.3-10.7-24-24-24z"></path></svg><!-- <i class="fas fa-chart-line"></i> !-->
+                              </a>
+                            </td>
+                            <td>
+                              <div class="toggle switch client-active toggle-on">
+                                <div class="toggle-text-off">Inactive</div>
+                                <div class="glow-comp"></div>
+                                <div class="toggle-button"></div>
+                                <div class="toggle-text-on">Active</div>
+                              </div>
+                              
+                            </td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+             
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cancel Booking</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          
+                <label>Do you want to Cancel this Booking ?</label>
+                <form method="post" id="cancel-form"  action="/operator/self-bookings/271/cancel/Archived Unassigned Bookings">
+                  <input type="hidden" name="_token" value="">
+                  <textarea maxlength="150" name="cancel_reason" class="form-control" placeholder="Reason (Optional)" id="cancel_reason"></textarea>
+                </form>
+             
+             
+                  <button type="submit" class="btn btn-default custom-submit-btn modal-button modal-yes">Yes</button>
+                  <button type="button" class="btn btn-default modal-button close-button" data-dismiss="modal">Close</button>
+                
+        </div>
+      </div>
+    </div>
+  </div> <!-- /Modal -->
+           <!-- </form>-->
+            </div><!--/container closed-->
+            <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+
+    
+      <script type="text/javascript" src="js/datatables.js"></script>
+      <script type="text/javascript" src="js/jquery.dataTables.js"></script>
+      <script type="text/javascript" src="js/dataTables.responsive.js"></script>
+      
+      <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+      <script src ="js/app.js"></script>
+     
+      <script type="text/javascript">
+   
+           $(function () {
+       
+                $('#table_id').DataTable( {
+                responsive: true
+            } );
+
+            /*ACTIVE TOGGLE BUTTON JS*/
+          /* $('.client-active').click(function(e){
+              alert('toggle');
+              if($(this).hasClass('toggle-on')) {
+                $(this).removeClass("toggle-on");
+              }
+              else {
+                $(this).addClass("toggle-on");
+              }
+
+            
+            });*/
+            $('#table_id').on('click','.toggle',function(){
+              if($(this).hasClass('toggle-on')) {
+                $(this).removeClass("toggle-on");
+              }
+              else {
+                $(this).addClass("toggle-on");
+              }
+            });
+            });//function closed
+    
+    
+       
+      </script>
+      
+    </body>
+    </html>
+    

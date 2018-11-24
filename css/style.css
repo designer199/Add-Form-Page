@@ -409,6 +409,9 @@ transition: all .2s ease-in-out;
 }
 .trash{
     color: #e74c3c;
+}
+.trash,.users,.suitcase,.rupee,.chart-line{
+  
     width:30px;
     height:30px;
 }
@@ -443,8 +446,120 @@ transition: all .2s ease-in-out;
     display:grid;
     grid-template-columns: 1fr;
 }
+/*TOGGLE SWITCH IN VIEW CLIENTS PAGE****/
 
+.toggle {
+    position: absolute;
+    bottom:10px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    -webkit-transition: border-color .6s ease-out;
+    transition: border-color .6s ease-out;
+    box-sizing: border-box;
+}
+.toggle.toggle-on {
+    border-color: #27ae60;
+    -webkit-transition: all .5s .15s ease-out;
+    transition: all .5s .15s ease-out;
+}
+.switch {
+    width: 72px;
+    height: 24px;
+    margin-top: -20px;
+    position: relative;
+    bottom: -1px;
+    left: 70px;
+}
+.toggle-on .toggle-text-off {
+    color: rgba(0, 0, 0, 0);
+}
+.toggle-text-off {
+    position: absolute;
+    top: 0px;
+    width: 68px;
+    bottom: 0px;
+    right: -7px;
+    line-height: 20px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    color: #ccc;
+}
+.toggle-on .glow-comp {
+    opacity: 1;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+}
+.glow-comp {
+    position: absolute;
+    opacity: 0;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    border-radius: 6px;
+    background-color: rgba(75, 122, 141, 0.1);
+    box-shadow: 0 0 12px rgba(75, 122, 141, 0.2);
+    -webkit-transition: opacity 4.5s 1s;
+    transition: opacity 4.5s 1s;
+}
+.toggle-on .toggle-button {
+    top: 2px;
+    width: 63px;
+    bottom: 2px;
+    right: 2px;
+    border-radius: 14px;
+    background-color: #2ecc71;
+    border-color: #27ae60;
+    box-shadow: 0 0 2px #27ae60;
+    -webkit-transition: all .2s .1s, right .1s;
+    transition: all .2s .1s, right .1s;
+}
+.toggle-button {
+        position: absolute;
+        top: 4px;
+        width: 14px;
+        bottom: 4px;
+        right: 50px;
+        background-color: #ccc;
+        border-radius: 19px;
+        cursor: pointer;
+        -webkit-transition: all .3s .1s, width .1s, top .1s, bottom .1s;
+        transition: all .3s .1s, width .1s, top .1s, bottom .1s;
+    }
+    
 
+.toggle-on .toggle-text-on {
+    color: #fff;
+    -webkit-transition: color 0.3s 0.15s;
+    transition: color 0.3s 0.15s;
+    font-weight: bold;
+    font-size: 13px;
+}
+.toggle-text-on {
+    position: absolute;
+    top: 0px;
+    width: 68px;
+    bottom: 0px;
+    right: 1px;
+    line-height: 20px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    color: rgba(0, 0, 0, 0);
+}
+
+  
 @media screen and (min-width: 1028px) {
  /*MODAL STYLES FOR ADD TAXI*/
 .grid-modal-add-driver
