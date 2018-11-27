@@ -1,4 +1,4 @@
-a {
+a ,.canceldetails{
     text-decoration: none;
 }
 a:hover
@@ -468,7 +468,7 @@ transition: all .2s ease-in-out;
     margin-top: -20px;
     position: relative;
     bottom: -1px;
-    left: 70px;
+    left: 10px;
 }
 .toggle-on .toggle-text-off {
     color: rgba(0, 0, 0, 0);
@@ -558,9 +558,56 @@ transition: all .2s ease-in-out;
     -ms-user-select: none;
     color: rgba(0, 0, 0, 0);
 }
+/**CLIENT DETAILS*************/
+.breadcrumb-block
+{
+    
+    padding: 11px 15px;
+    margin-bottom: 12px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 3px 16px -2px #ccc;
+}
+.tripheading{
+    color: #777;
+}
+.row1{
+    width:95%;
+}
+.page-container
+{
+    width:95%;
+    margin:auto;
+}
+.form-container-details
+{
+background-color: #fff;
+margin-bottom: 10px;
+padding:10px 0 10px 0;
+border-radius: 3px;
+}
 
-  
+/**STYLES FOR NAV TABS***/
+.nav-tabs .nav-link.active  {
+    border: 1px solid transparent !important;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin: 0;
+    padding: 15px 16px;
+    background: linear-gradient(135deg, #ff4c9f, #ff7b74);
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff !important;
+    font-weight: bold;
+}
+.nav-tabs .nav-link {
+    padding: 15px 16px;
+    background-color: #ccc;
+    margin: 0;
+    color: #444;
+}
+
 @media screen and (min-width: 1028px) {
+    
  /*MODAL STYLES FOR ADD TAXI*/
 .grid-modal-add-driver
 {
