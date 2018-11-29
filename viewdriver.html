@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/datatables.css">
+    <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap4.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.dataTables.css">
+
+    <title>View Driver</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg mb-3">
+        <div id="fh5co-logo"><a href="index.html" target="_blank" class="navbar-brand">Fleet247
+                <!--<span class ="logo-dot">.</span>--></a></div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                    <path d="M10,1.445c-4.726,0-8.555,3.829-8.555,8.555c0,4.725,3.829,8.555,8.555,8.555c4.725,0,8.555-3.83,8.555-8.555C18.555,5.274,14.725,1.445,10,1.445 M10,17.654c-4.221,0-7.654-3.434-7.654-7.654c0-4.221,3.433-7.654,7.654-7.654c4.222,0,7.654,3.433,7.654,7.654C17.654,14.221,14.222,17.654,10,17.654 M14.39,10c0,0.248-0.203,0.45-0.45,0.45H6.06c-0.248,0-0.45-0.203-0.45-0.45s0.203-0.45,0.45-0.45h7.879C14.187,9.55,14.39,9.752,14.39,10 M14.39,12.702c0,0.247-0.203,0.449-0.45,0.449H6.06c-0.248,0-0.45-0.202-0.45-0.449c0-0.248,0.203-0.451,0.45-0.451h7.879C14.187,12.251,14.39,12.454,14.39,12.702 M14.39,7.298c0,0.248-0.203,0.45-0.45,0.45H6.06c-0.248,0-0.45-0.203-0.45-0.45s0.203-0.45,0.45-0.45h7.879C14.187,6.848,14.39,7.051,14.39,7.298">
+                    </path>
+                </svg>
+            </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" target="_blank">Dashboard</a>
+                </li>
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Self-Booking
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="addbooking.html" target="_blank">Add Booking</a>
+                        <a class="dropdown-item" href="activeunassigned.html" target="_blank">Active Unassigned</a>
+
+                        <a class="dropdown-item" href="activeunassigned.html" target="_blank">Active Assigned</a>
+                        <a class="dropdown-item" href="archivedunassigned.html" target="_blank">Archived Unassigned</a>
+                        <a class="dropdown-item" href="archivedassigned.html" target="_blank">Archived Assigned</a>
+                        <a class="dropdown-item" href="cancelledbookings.html" target="_blank">Cancelled</a>
+
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Client
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="addclient.html" target="_blank">Add Client</a>
+                        <a class="dropdown-item" href="viewclient.html" target="_blank">View Client</a>
+
+
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Driver
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="adddriver.html" target="_blank">Add Driver</a>
+                        <a class="dropdown-item" href="viewdriver.html" target="_blank">View Driver</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Taxis
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="addtaxis.html" target="_blank">Add Taxis</a>
+                        <a class="dropdown-item" href="#">View Taxis</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Billing
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Unbilled</a>
+                        <a class="dropdown-item" href="#">Billed:Unpaid</a>
+                        <a class="dropdown-item" href="#">Billed:Paid</a>
+                        <a class="dropdown-item" href="self-billing.html" target="_blank">Client Self Billing</a>
+                    </div>
+                </li>
+                <a href="support.html" target="_blank"><button class="custom-submit-btn btn btn-default">Support</button>
+                </a>
+
+
+            </ul>
+
+
+        </div>
+    </nav>
+    <!--/navigation-->
+    <div class="form-container">
+        <div class="formCreate__head">
+
+
+            <!--<form id="addBookingForm" class="formCreate__form" method="post" action="">-->
+            <div class="formitem">
+                <label class="addbookinglabel">DRIVERS</label>
+
+            </div>
+        </div>
+        <!--/head-->
+
+        <table id="table_id" class="row-border" width="100%">
+            <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>PHONE</th>
+                    <th>LICENSE NUMBER</th>
+                    <th>RATING</th>
+                    <th>TRACK</th>
+                    <th>ATTACHED TAXI</th>
+                    <th>TRIP DETAILS</th>
+                    <th>VERIFICATION STATUS</th>
+                    <th>DETAILS</th>
+                    <th>DELETE</th>
+                    <th>STATUS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Chetan Bansal</td>
+                    <td>9582058187</td>
+                    <td>DL987</td>
+                    <td><a href="http://127.0.0.1:8000/operator/drivers/37/show" title="Click for more Details">
+                            NA
+                        </a></td>
+                    <td><a href="http://127.0.0.1:8000/operator/drivers/37/track">
+                            <span class="driver_track"><svg class=" track svg-inline--fa fa-map-pin fa-w-10"
+                                    aria-hidden="true" data-prefix="fa" data-icon="map-pin" role="img" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 320 512" data-fa-i2svg="">
+                                    <path fill="currentColor" d="M192 300.813v172.82l-22.015 33.023c-4.75 7.125-15.219 7.125-19.969 0L128 473.633v-172.82a162.221 162.221 0 0 0 64 0zM160 0c79.529 0 144 64.471 144 144s-64.471 144-144 144S16 223.529 16 144 80.471 0 160 0M80 136c0-39.701 32.299-72 72-72a8 8 0 0 0 0-16c-48.523 0-88 39.477-88 88a8 8 0 0 0 16 0z"></path>
+                                </svg><!-- <i class="fa fa-map-pin"></i> --></span>
+                        </a>
+                    </td>
+                    <td><a href="http://127.0.0.1:8000/operator/drivers/66/show">
+                            <span>LINK</span>
+                        </a></td>
+
+                    <td>
+                        <a href="" class="" data-toggle="modal" data-target="#exampleModal">
+                            <a href="tripdetails.html" target="_blank"><svg class=" suitcase svg-inline--fa fa-suitcase fa-w-16"
+                                    aria-hidden="true" data-prefix="fas" data-icon="suitcase" role="img" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512" data-fa-i2svg="">
+                                    <path fill="currentColor" d="M96 480h320V128h-32V80c0-26.51-21.49-48-48-48H176c-26.51 0-48 21.49-48 48v48H96v352zm96-384h128v32H192V96zm320 80v256c0 26.51-21.49 48-48 48h-16V128h16c26.51 0 48 21.49 48 48zM64 480H48c-26.51 0-48-21.49-48-48V176c0-26.51 21.49-48 48-48h16v352z"></path>
+                                </svg></a>
+                        </a>
+                    </td>
+
+
+                    <td>
+                        <div id="pending">
+                            <span class="verification-msg pending">PENDING</span>
+                        </div>
+                    </td>
+                    <td>
+                        <a href="http://127.0.0.1:8000/operator/drivers/66/show">
+                            <svg class="svg-inline--fa fa-info fa-w-6" aria-hidden="true" data-prefix="fa" data-icon="info"
+                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512" data-fa-i2svg="">
+                                <path fill="currentColor" d="M20 424.229h20V279.771H20c-11.046 0-20-8.954-20-20V212c0-11.046 8.954-20 20-20h112c11.046 0 20 8.954 20 20v212.229h20c11.046 0 20 8.954 20 20V492c0 11.046-8.954 20-20 20H20c-11.046 0-20-8.954-20-20v-47.771c0-11.046 8.954-20 20-20zM96 0C56.235 0 24 32.235 24 72s32.235 72 72 72 72-32.235 72-72S135.764 0 96 0z"></path>
+                            </svg><!-- <i class="fa fa-info"></i> -->
+                        </a>
+                    </td>
+                    <td>
+                        <a id="cancel_btn" data-toggle="modal" data-target="#exampleModal">
+                            <svg class="svg-inline--fa fa-trash-alt fa-w-14 trash" aria-hidden="true" data-prefix="fa"
+                                data-icon="trash-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                data-fa-i2svg="">
+                                <path fill="currentColor" d="M0 84V56c0-13.3 10.7-24 24-24h112l9.4-18.7c4-8.2 12.3-13.3 21.4-13.3h114.3c9.1 0 17.4 5.1 21.5 13.3L312 32h112c13.3 0 24 10.7 24 24v28c0 6.6-5.4 12-12 12H12C5.4 96 0 90.6 0 84zm416 56v324c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48V140c0-6.6 5.4-12 12-12h360c6.6 0 12 5.4 12 12zm-272 68c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208z"></path>
+                            </svg><!-- <i class="fa fa-trash-alt"></i> -->
+                        </a>
+                    </td>
+                    <td>
+                        <div class="toggle switch  driver-active   toggle-on">
+                            <div class="toggle-text-off">Inactive</div>
+                            <div class="glow-comp"></div>
+                            <div class="toggle-button"></div>
+                            <div class="toggle-text-on">Active</div>
+                        </div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <button type="button" class="formCreate__input custom-submit-btn btn submitbtn" >TRACK ALL</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Delete Driver</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <label>Do you want to Delete this Driver?</label>
+                        <form method="post" id="cancel-form" action="/operator/self-bookings/271/cancel/Archived Unassigned Bookings">
+                            <input type="hidden" name="_token" value="">
+                            
+                        </form>
+
+
+                        <button type="submit" class="btn btn-default custom-submit-btn modal-button modal-yes">Yes</button>
+                        <button type="button" class="btn btn-default modal-button close-button" data-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /Modal -->
+        <!-- </form>-->
+    </div>
+    <!--/container closed-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript" src="js/datatables.js"></script>
+    <script type="text/javascript" src="js/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="js/dataTables.responsive.js"></script>
+
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+
+           var table1= $('#table_id').DataTable({
+                responsive: true,
+
+            });
+
+
+            $('#table_id').on('click', '.toggle', function () {
+                if ($(this).hasClass('toggle-on')) {
+                    $(this).removeClass("toggle-on");
+                } else {
+                    $(this).addClass("toggle-on");
+                }
+            });
+          
+        }); //function closed
+    </script>
+
+</body>
+
+</html>

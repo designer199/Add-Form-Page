@@ -354,6 +354,7 @@ margin: 0 10px 0 5px;
     grid-template-columns: 1fr;
     grid-gap:10px;
 }
+
 .upload-btn-wrapper {
 position: relative;
 overflow: hidden;
@@ -410,10 +411,10 @@ transition: all .2s ease-in-out;
 .trash{
     color: #e74c3c;
 }
-.trash,.users,.suitcase,.rupee,.chart-line{
+.trash,.users,.suitcase,.rupee,.chart-line,.track{
   
-    width:30px;
-    height:30px;
+    width:20px;
+    height:20px;
 }
 /* Modal styles */
 .modal-title {
@@ -465,10 +466,10 @@ transition: all .2s ease-in-out;
 .switch {
     width: 72px;
     height: 24px;
-    margin-top: -20px;
+   margin-top: -20px;
     position: relative;
     bottom: -1px;
-    left: 10px;
+    left: 70px;
 }
 .toggle-on .toggle-text-off {
     color: rgba(0, 0, 0, 0);
@@ -496,7 +497,7 @@ transition: all .2s ease-in-out;
     transition: opacity 1s;
 }
 .glow-comp {
-    position: absolute;
+   position: absolute;
     opacity: 0;
     top: 10px;
     bottom: 10px;
@@ -605,7 +606,16 @@ border-radius: 3px;
     margin: 0;
     color: #444;
 }
-
+/*VIEW DRIVER*/
+.verification-msg {
+    font-size: 11px;
+    padding: 1% 6%;
+    border-radius: 2px;
+    font-weight: bold;
+}
+.pending {
+    background-color: #f1c40f;
+}
 @media screen and (min-width: 1028px) {
     
  /*MODAL STYLES FOR ADD TAXI*/
@@ -685,4 +695,16 @@ border-radius: 3px;
     grid-template-columns: repeat(3, 1fr);
     grid-gap:10px;
 }
+.trash,.users,.suitcase,.rupee,.chart-line,.track{
+  
+    width:25px;
+    height:25px;
+}
+
+}
+@media screen and (min-width: 1172px) {
+    .switch{
+        left:10px;
+        top:9px;
+    }
 }
