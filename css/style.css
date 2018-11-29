@@ -411,7 +411,7 @@ transition: all .2s ease-in-out;
 .trash{
     color: #e74c3c;
 }
-.trash,.users,.suitcase,.rupee,.chart-line,.track{
+.trash,.users,.suitcase,.rupee,.chart-line,.track1{
   
     width:20px;
     height:20px;
@@ -695,7 +695,7 @@ border-radius: 3px;
     grid-template-columns: repeat(3, 1fr);
     grid-gap:10px;
 }
-.trash,.users,.suitcase,.rupee,.chart-line,.track{
+.trash,.users,.suitcase,.rupee,.chart-line,.track1{
   
     width:25px;
     height:25px;
