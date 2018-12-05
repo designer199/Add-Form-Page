@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -7,17 +7,20 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/datatables.css">
+    <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap4.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Add Driver</title>
+    <link rel="stylesheet" type="text/css" href="css/responsive.dataTables.css">
+   
+    <title>Add Client Rates</title>
 </head>
 <body>
         <nav class="navbar navbar-expand-lg mb-3">
-            <div id=""><a href="https://fleet247.in" target="_blank" class="navbar-brand">Fleet247<!--<span class ="logo-dot">.</span>--></a></div>
+            <div id="fh5co-logo"><a href="index.html" target="_blank" class="navbar-brand">Fleet247<!--<span class ="logo-dot">.</span>--></a></div>
                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon">
@@ -40,16 +43,13 @@
                       </a>
                      
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
                         <a class="dropdown-item" href="addbooking.html" target="_blank">Add Booking</a>
-
-  
-                        <a class="dropdown-item" href="activeassigned.html" target="_blank">Active Unassigned</a>
+                        <a class="dropdown-item" href="activeunassigned.html" target="_blank">Active Unassigned</a>
                         
-                        <a class="dropdown-item" href="activeassigned.html" target="_blank">Active Assigned</a>
-                        <a class="dropdown-item" href="archivedunassigned.html" target="_blank">Archived Unassigned</a>
-                        <a class="dropdown-item" href="archivedassigned.html" target="_blank">Archived Assigned</a>
-                        <a class="dropdown-item" href="cancelledbookings.html" target="_blank">Cancelled</a>
+                        <a class="dropdown-item" href="activeunassigned.html" target="_blank">Active Assigned</a>
+                        <a class="dropdown-item" href="archivedunassigned.html"  target="_blank">Archived Unassigned</a>
+                        <a class="dropdown-item" href="archivedassigned.html" target="_blank" >Archived Assigned</a>
+                        <a class="dropdown-item" href="cancelledbookings.html"  target="_blank">Cancelled</a>
 
                       </div>
                     </li>
@@ -96,101 +96,116 @@
                                         </div>
                                       </li>
                                       <a href="support.html" target="_blank"><button class="custom-submit-btn btn btn-default">Support</button>    
-                                      </a>           
-                                      
+                                      </a>                         
+                                                      
+                                                      
                   </ul>
                        
                        
                 </div>
               </nav>
               <!--/navigation-->
-
+              <div class="page-container">
+                    <div class="breadcrumb1">
+                   
+                        
+                          <span><a href="viewclient.html"  target="_blank">Clients</a></span>
+                          <span class="tripheading">
+                               / <a href="clientrates.html"  target="_blank"> Client Rates</a></span>/<span>Client Add Rates</span>
+                      
+                      </div>
+                    </div>
               <div class="form-container">
                 <div class="formCreate__head">
-
-               
-                      
-            <form id="addBookingForm" class="formCreate__form" method="post" action="">
+                        
+                     
+            <!--<form id="addBookingForm" class="formCreate__form" method="post" action="">-->
                 <div class="formitem">
-                    <label class="addbookinglabel">ADD DRIVER DETAILS</label>
+                    <label class="addbookinglabel">ADD RATE</label>
+                   
                   </div>
-                  </div>
-              
-              
-               <div class="form-grid-add-driver">
-                   <div class="grid-item">
-
-                        <div class="driverVehicle__img">
-                                <div>
-                                  <img src="images/user.png" alt="" id="image_preview">
-                                </div>
-
-                            
-                               
-                                <div class="driverVehicle__content-upload">
-                                  <div class="upload-btn-wrapper">
-                                    <button class="custom-file-btn">Upload Image</button>
-                                    <input type="file" class="form-control" name="image_path" accept="image/*" id="imgInp">
-
-              
-                           
-                                  </div>
-                                  <p id="image_name"></p>
-                                </div>
-                              </div>
-
-                            </div><!--/item-->
-                            <div class="grid-item-grid">
-                              <div class="grid-item">
-                              <div class="formCreate__content1">  
-                                    <div class="formCreate_form-group item ml mlb">
-                                            <label class="ml-2">FIRST NAME*</label>
-                                            <input type="text" placeholder="First Name" pattern="[A-Za-z\s]{1,15}" class="" name="first_name" required title="Can contain uppercase & lowercase letters">
-                                          </div>
-                                        </div>
-                                      </div>
-                                        <div class="grid-item">
-                                        <div class="formCreate_form-group item mlb">
-                                                <label>LAST NAME*</label>
-                                                <input type="text" placeholder="Last Name" pattern="[A-Za-z\s]{1,15}" class="" name="last_name" required title="Can contain uppercase & lowercase letters">
-                                              </div>
-                                            </div>
-                                            <div class="grid-item">
-                                              <div class="formCreate_form-group item mlb">
-                                              <label>PHONE*</label>
-                        <input type="text" placeholder="Your Phone Number" pattern="[0-9]{10}" class="" name="contact_no" required title="Should contain 10 Digits">
-                      </div>
-                                            </div>
-                                            <div class="grid-item">                      
-                      <div class="formCreate_form-group item mlb">
-                      <label>EMAIL</label>
-                      <input type="text" placeholder="Your Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,3}$" class="" name="email" title="Should be of the format: abc@xyz.com">
-                    </div>
-                  </div>
-                  <div class="grid-item">                      
-                      <div class="formCreate_form-group item mlb">
-                  <label>LICENSE NUMBER*</label>
-                        <input type="text" placeholder="License Number" pattern="[a-zA-Z0-9]+" class="" name="licence_number" required title="Can contain numbers, uppercase, lowercase letters">
-                  </div>
-                  </div>
-                  <div class="grid-item">                      
-                      <div class="formCreate_form-group item mlb">
-                  <label>COMMENTS(IF ANY)</label>
-                  <textarea class="textarea-full custom-textarea" title="Can contain numbers, uppercase & lowercase letters" pattern="[a-zA-Z0-9\s]+" name="comments"></textarea>
+                </div><!--/head-->
+          <div class="grid-modal-add-driver">
+              <div class="grid-item mlb">
+                    
+                    <label>SELECT CITY</label>
+                    <input class="" type="text" name="city" id="city" placeholder="Enter City" required="" autocomplete="off">
+                         
+              </div>
+              <div class="grid-item mlb">
+                <label>KMS INCLUDED</label>
+                <input type="text" name="kms_included" placeholder="Enter KM Included" class="" id="kms_included&quot;&quot;" required="">
+                        
+              </div>
+              <div class="grid-item mlb">
+                    <label>SELECT TAXI TYPE</label>
+                    <select style="width: 70%">
+                        <option value="">Select City</option>
+                    </select>
+                          
+               </div>
+               <div class="grid-item mlb">
+                <label>EXTRA KM RATE</label>
+                <input type="text" name="extra_km_rate" placeholder="Enter Extra KM Rate" class="form-control" id="extra_km_rate" required="">
                 </div>
-                </div>     
-                </div><!--/grid-item-grid-->
-                                          </div><!--/grid-outside-->
-                                          <input type="submit" value="submit" class="formCreate__input custom-submit-btn btn submitbtn">                                        
-</div>
-</form>    
+                <div class="grid-item mlb">
+                        <label>SELECT TOUR TYPE</label>
+                        <select style="width: 70%">
+                            <option value="">Local</option>
+                        </select>
+                </div>
+                <div class="grid-item mlb">
+                <label>DRIVER ALLOWANCE</label>
+                <input type="text" name="driver_allowance" placeholder="Enter Driver Allowance" class="form-control" id="driver_allowance" required="">
+                              
+                </div>
+                <div class="grid-item mlb">
+                <label for="package_name">PACKAGE NAME</label>
+                <input type="text" name="package_name" placeholder="Enter Package Name" class="form-control" autofocus="" id="package_name" required="" autocomplete="off" aria-owns="awesomplete_list_1" role="combobox">
+                </div>
+                <div class="grid-item mlb">
+                <label>BASE RATE</label>
+                <input type="text" name="base_rate" pattern="[0-9]{1,5}" title="Should contain the Base rate;eg-100,200 etc" placeholder="Enter Base Rate" class="form-control" id="base_rate" required="">
+                          
+                </div>
+          </div>
+                
+          <input type="submit" value="submit" class="formCreate__input custom-submit-btn btn submitbtn">      
+               
 
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
-<script src ="js/app.js"></script>
-</body>
-</html>
+           <!-- </form>-->
+
+            </div><!--/container closed-->
+            <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+
+    
+      <script type="text/javascript" src="js/datatables.js"></script>
+      <script type="text/javascript" src="js/jquery.dataTables.js"></script>
+      <script type="text/javascript" src="js/dataTables.responsive.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+      <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+      <script src ="js/app.js"></script>
+     
+      <script type="text/javascript">
    
+           $(function () {
+       
+        $('#table_id').DataTable( {
+        responsive: true
+    } );
+    $("select").select2({
+    width: 'resolve' // need to override the changed default
+  });
+    } );   
+      </script>
       
+    </body>
+    </html>
+    

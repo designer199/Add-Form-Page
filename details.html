@@ -78,7 +78,7 @@
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                       <a class="dropdown-item" href="addtaxis.html" target="_blank">Add Taxis</a>
-                                      <a class="dropdown-item" href="#">View Taxis</a>
+                                      <a class="dropdown-item" href="viewvehicle.html" target="_blank">View Taxis</a>
                                     </div>
                                   </li>
                                   <li class="nav-item dropdown">
@@ -301,7 +301,7 @@
                                                               </div>
                                                             </div>
                                                    
-                                                       
+                                                            <div class="row invoice-detail-row">
                                                            <label class="mlb"><u>DATE / TIME DETAILS</u></label>
                                                            <div class="grid-booking-details">
                                                        <div class="grid-item">
@@ -322,9 +322,9 @@
                                                                 <label class="mlb">DROP TIME</label>    
                                                                 <input type="text" class="timepicker mlb" id="" name="time" required="">                              
                                                         </div>  
-                                                                                                             
+                                                        </div>                                                     
                                                 </div>
-
+                                                <div class="row invoice-detail-row">
                                                 <label class="mlb mt-1"><u>KM USAGE DETAILS</u></label>
                                                 <div class="grid-booking-details">
                                             <div class="grid-item">
@@ -344,9 +344,9 @@
                                                      <label class="mlb">KMS DONE</label>    
                                                      <input type="text" class="disabled mlb" id="kms_done" name="kms_done" required="" readonly="">                             
                                              </div>  
-                                                                                                  
+                                                </div>                                                  
                                      </div>
-
+                                     <div class="row invoice-detail-row">
                                      <label class="mlb mt-1"><u>EXTRA KM DETAILS</u></label>
                                      <div class="grid-booking-details">
                                  <div class="grid-item">
@@ -366,9 +366,9 @@
                                           <label class="mlb">EXTRA CHARGE FOR KMS</label>    
                                           <input type="text" class="disabled" id="extra_kms_charge" name="extra_kms_charge" required="" readonly="">                            
                                   </div>  
-                                                                                       
+                                   </div>                                                    
                           </div>
-
+                          <div class="row invoice-detail-row">
                           <label class="mlb mt-1"><u>EXTRA HOURS USAGE</u></label>
                           <div class="grid-booking-details">
                       <div class="grid-item">
@@ -384,12 +384,14 @@
                            <label class="mlb">BASE RATE PER DAY</label>    
                            <input type="text" class="disabled mlb" id="base_rate_per_day" name="base_rate_per_day" value="1500" required="" readonly="">                  
                        </div>
+                
                        <div class="grid-item">
                                <label class="mlb">BASE RATE</label>    
                                <input type="text" class="mlb disabled" id="base_rate" name="base_rate" value="1500" required="" readonly="">                         
                        </div>  
-                                                                            
+                        </div>                                                    
                </div>
+               <div class="row invoice-detail-row">
                <label class="mlb"><u>INVOICE DETAILS</u></label>
                <div class="grid-booking-details">
            <div class="grid-item">
@@ -430,7 +432,8 @@
             <div class="grid-item">
                     <label class="mlb">TOTAL AFTER TAX</label>    
                     <input type="text" class="disabled mlb" id="total_after_tax" name="total_after_tax" required="" readonly="">
-            </div>                                                        
+            </div>   
+            </div>                                                     
     </div>
                                                 <input type="submit" value="submit" class="formCreate__input custom-submit-btn btn submitbtn"> 
                                                    </div>  

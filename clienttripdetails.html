@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Add</title>
+    <title>Details</title>
 </head>
 <body>
         <nav class="navbar navbar-expand-lg mb-3">
@@ -41,11 +41,11 @@
                      
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="addbooking.html" target="_blank">Add Booking</a>
-                        <a class="dropdown-item" href="activeunassigned.html" target="_blank">Active Unassigned</a>
+                        <a class="dropdown-item" href="activeassigned.html"  target="_blank">Active Unassigned</a>
                         
-                        <a class="dropdown-item" href="activeassigned.html" target="_blank">Active Assigned</a>
-                        <a class="dropdown-item" href="archivedunassigned.html" target="_blank">Archived Unassigned</a>
-                        <a class="dropdown-item" href="archivedassigned.html" target="_blank">Archived Assigned</a>
+                        <a class="dropdown-item" href="activeassigned.html"  target="_blank">Active Assigned</a>
+                        <a class="dropdown-item" href="archivedunassigned.html"  target="_blank">Archived Unassigned</a>
+                        <a class="dropdown-item" href="archivedassigned.html"  target="_blank">Archived Assigned</a>
                         <a class="dropdown-item" href="cancelledbookings.html" target="_blank">Cancelled</a>
 
                       </div>
@@ -69,7 +69,7 @@
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                   <a class="dropdown-item" href="adddriver.html" target="_blank">Add Driver</a>
-                                  <a class="dropdown-item" href="viewdriver.html"target="_blank">View Driver</a>
+                                  <a class="dropdown-item" href="viewdriver.html" target="_blank">View Driver</a>
                                 </div>
                               </li>
                               <li class="nav-item dropdown">
@@ -78,7 +78,7 @@
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                       <a class="dropdown-item" href="addtaxis.html" target="_blank">Add Taxis</a>
-                                      <a class="dropdown-item" href="viewvehicle.html" target=_blank>View Taxis</a>
+                                      <a class="dropdown-item" href="viewvehicle.html" target="_blank">View Taxis</a>
                                     </div>
                                   </li>
                                   <li class="nav-item dropdown">
@@ -145,14 +145,14 @@
                                     <p class="mlb">Haldwani</p>
                             </div>   
                             <div class="grid-item">
-                                    <label class="mlb">COST CENTER CODE</label>
+                                    <label class="mlb ml">COST CENTER CODE</label>
                             </div>  
                             <div class="grid-item">
                                     <label class="mlb">PICKUP DATE | TIME</label>
                                     <p class="mlb">10-08-2018 | 19:00</p>
                             </div>    
                             <div class="grid-item">
-                                    <label class="mlb">TOUR TYPE</label>
+                                    <label  class="mlb">TOUR TYPE</label>
                                     <p class="mlb">Outstation | 1 days</p>
                             </div> 
                             <div class="grid-item">
@@ -183,7 +183,7 @@
     
                                <div class="grid-item">
                                     <label class="mlb">NAME</label>
-                                    <p class="mlb">Sandeep</p>
+                                    <p  class="mlb">Sandeep</p>
                                 </div>
     
                                 <div class="grid-item">
@@ -191,7 +191,7 @@
                                         <p class="mlb">praveen@taxivaxi.com</p>
                                     </div>
                                 <div class="grid-item">
-                                        <label class="mlb">CONTACT</label>
+                                        <label  class="mlb">CONTACT</label>
                                         <p class="mlb">9899701993</p>
                                 </div>
                                
@@ -226,7 +226,7 @@
                                             </div>
                                         <div class="grid-item">
                                                 <label class="mlb">DRIVER ALLOWANCE</label>
-                                                <p class="mlb">₹ 200</p>
+                                                <p  class="mlb">₹ 200</p>
                                         </div>
                                         <div class="grid-item">
                                                 <label class="mlb">TAXI TYPE</label>
@@ -248,6 +248,27 @@
                                        
                                    </div>
                                   </div>
+
+                                 
+
+                          <div class="form-container">
+                            <div class="formCreate__head">
+                            
+                         
+                                    <form id="addBookingForm" class="formCreate__form" method="post" action="">
+                                        <div class="formitem">
+                                            <label class="addbookinglabel">JOURNEY PATH</label>
+                                           
+                                          </div>
+                                        </div>
+                                        <div class="map">
+                                                <label style="background: #E5E3DF;height:100%;width:100%;"></label>
+                                           
+                                          </div>
+                                                     </div>
+                              
+                              
+                              
                                   <div class="form-container">
                                         <div class="formCreate__head">
                                         
@@ -301,7 +322,7 @@
                                                               </div>
                                                             </div>
                                                    
-                                                       
+                                                            <div class="row invoice-detail-row">
                                                            <label class="mlb"><u>DATE / TIME DETAILS</u></label>
                                                            <div class="grid-booking-details">
                                                        <div class="grid-item">
@@ -322,9 +343,9 @@
                                                                 <label class="mlb">DROP TIME</label>    
                                                                 <input type="text" class="timepicker mlb" id="" name="time" required="">                              
                                                         </div>  
-                                                                                                             
+                                                     </div>                                                        
                                                 </div>
-
+                                                <div class="row invoice-detail-row">
                                                 <label class="mlb mt-1"><u>KM USAGE DETAILS</u></label>
                                                 <div class="grid-booking-details">
                                             <div class="grid-item">
@@ -346,7 +367,8 @@
                                              </div>  
                                                                                                   
                                      </div>
-
+                                    </div>
+                                     <div class="row invoice-detail-row">
                                      <label class="mlb mt-1"><u>EXTRA KM DETAILS</u></label>
                                      <div class="grid-booking-details">
                                  <div class="grid-item">
@@ -355,7 +377,7 @@
                                  </div>
                                  <div class="grid-item">
                                   <label class="mlb">PACKAGE KMS</label>    
-                                  <input type="text" class="disabled" id="allowed_kms" name="allowed_kms" required="" readonly="">                   
+                                  <input type="text" class="disabled mlb" id="allowed_kms" name="allowed_kms" required="" readonly="">                   
                                   </div>
                                   
                                   <div class="grid-item">
@@ -364,11 +386,12 @@
                                   </div>
                                   <div class="grid-item">
                                           <label class="mlb">EXTRA CHARGE FOR KMS</label>    
-                                          <input type="text" class="disabled" id="extra_kms_charge" name="extra_kms_charge" required="" readonly="">                            
+                                          <input type="text" class="mlb disabled" id="extra_kms_charge" name="extra_kms_charge" required="" readonly="">                            
                                   </div>  
                                                                                        
                           </div>
-
+                          </div>
+                          <div class="row invoice-detail-row">
                           <label class="mlb mt-1"><u>EXTRA HOURS USAGE</u></label>
                           <div class="grid-booking-details">
                       <div class="grid-item">
@@ -376,7 +399,7 @@
                            <input type="text" class="mlb" id="driver_allowance_per_day" name="driver_allowance_per_day" value="200" required="" readonly="">
                       </div>
                       <div class="grid-item">
-                       <label class="mlb">DRIVER ALLOWANCE</label>    
+                       <label class="mlb"> DRIVER ALLOWANCE</label>    
                        <input type="text" class="disabled mlb" id="driver_allowance" name="driver_allowance" required="" readonly="">                   
                        </div>
                        
@@ -388,8 +411,9 @@
                                <label class="mlb">BASE RATE</label>    
                                <input type="text" class="mlb disabled" id="base_rate" name="base_rate" value="1500" required="" readonly="">                         
                        </div>  
-                                                                            
+                       </div>                                                     
                </div>
+               <div class="row invoice-detail-row">
                <label class="mlb"><u>INVOICE DETAILS</u></label>
                <div class="grid-booking-details">
            <div class="grid-item">
@@ -413,9 +437,9 @@
                     <label class="mlb">TOTAL EXCLUDING TAX</label>    
                     <input type="text" class="disabled mlb" id="total_ex_tax" name="total_ex_tax" required="" readonly="">                     
             </div> 
-            <div class="grid-item">
-                    <label class="mlb">TAX RATE</label>    
-                    <select id="tax_rate" class="mlb" name="tax_rate" required="">
+            <div class="mlb grid-item">
+                    <label class="">TAX RATE</label>    
+                    <select id="tax_rate" class="" name="tax_rate" required="">
                             <option value="0">0</option>
                             <option value="5">5</option>
                             <option value="12">12</option>
@@ -430,10 +454,64 @@
             <div class="grid-item">
                     <label class="mlb">TOTAL AFTER TAX</label>    
                     <input type="text" class="disabled mlb" id="total_after_tax" name="total_after_tax" required="" readonly="">
-            </div>                                                        
+            </div>  
+        </div>  
+        </div>
+        <div class="row invoice-detail-row">
+    <label class="mlb"><u>ADJUSTMENT AMOUNT</u></label>
+    <div class="grid-booking-details">
+<div class="grid-item">
+        <label class="mlb">ADJUSTMENT AMOUNT</label>
+        <input type="text" id="adjustment" class="mlb" name="adjustment" required="">
+ 
+</div>
+<div class="grid-item">
+        <label class="mlb">COMMENTS</label>
+
+        <textarea rows="1" cols="44" maxlength="500" class="mlb textarea-full" name="comments"></textarea>            
+ </div>
+ 
+ <div class="grid-item">
+        <label class="mlb">SUBTOTAL AMOUNT</label>
+  
+        <input type="text" id="sub_total" class="mlb readonly disabled" name="sub_total" required="" readonly="">            
+ </div>
+ <div class="grid-item">
+      
+       
+ 
+</div>                        
+</div>
+ </div>     
+ 
+ <div class="row invoice-detail-row">
+        <label class="mlb"><u>SEND EMAIL/SMS</u></label>
+      
+    <div class="col-md-3">
+            <label class="mlb">ADMIN</label>
+            <input type="checkbox" id="admin_check" name="admin_communication" class="mlb">
+     
     </div>
-                                                <input type="submit" value="submit" class="formCreate__input custom-submit-btn btn submitbtn"> 
-                                                   </div>  
+    <div class="col-md-3">
+            <label for="user_check" class="mlb">USERS</label>
+    
+            <input type="checkbox" id="user_check" name="user_communication" class="mlb"> 
+     </div>
+     
+     <div class="col-md-3">
+            <label for="driver_check" class="mlb">DRIVER</label>
+      
+            <input type="checkbox" id="driver_check" name="driver_communication" class="mlb">
+     </div>
+     <div class="grid-item">
+          
+           
+     
+    </div>                        
+  
+     </div>   
+                                                  
+                                                   <input type="submit" value="submit" class="formCreate__input custom-submit-btn btn submitbtn"> 
                                        
                                                                                      
  <!-- Optional JavaScript -->

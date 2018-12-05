@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.dataTables.css">
    
-    <title>Cancelled Bookings</title>
+    <title>Add Client Contact</title>
 </head>
 <body>
         <nav class="navbar navbar-expand-lg mb-3">
@@ -45,10 +45,10 @@
                         <a class="dropdown-item" href="addbooking.html" target="_blank">Add Booking</a>
                         <a class="dropdown-item" href="activeunassigned.html" target="_blank">Active Unassigned</a>
                         
-                        <a class="dropdown-item" href="activeassigned.html"  target="_blank">Active Assigned</a>
+                        <a class="dropdown-item" href="activeunassigned.html" target="_blank">Active Assigned</a>
                         <a class="dropdown-item" href="archivedunassigned.html"  target="_blank">Archived Unassigned</a>
-                        <a class="dropdown-item" href="archivedassigned.html" target="_blank">Archived Assigned</a>
-                        <a class="dropdown-item" href="cancelledbookings.html" target="_blank">Cancelled</a>
+                        <a class="dropdown-item" href="archivedassigned.html" target="_blank" >Archived Assigned</a>
+                        <a class="dropdown-item" href="cancelledbookings.html"  target="_blank">Cancelled</a>
 
                       </div>
                     </li>
@@ -104,82 +104,77 @@
                 </div>
               </nav>
               <!--/navigation-->
+              <div class="page-container">
+                    <div class="breadcrumb1">
+                   
+                        
+                          <span><a href="viewclient.html"  target="_blank">Clients</a></span>
+                          <span class="tripheading">/ Client Contacts</span>
+                      
+                      </div>
+                    </div>
               <div class="form-container">
                 <div class="formCreate__head">
                         
                      
             <!--<form id="addBookingForm" class="formCreate__form" method="post" action="">-->
                 <div class="formitem">
-                    <label class="addbookinglabel">CANCELLED BOOKINGS</label>
+                    <label class="addbookinglabel">ADD CONTACT</label>
                    
                   </div>
                 </div><!--/head-->
+          <div class="grid-form1">
+              <div class="grid-item mlb">
+                    
+                            <label>DESIGNATION</label>
+                            <input type="text" name="designation" class="" id="designation">
+                         
+              </div>
+              <div class="grid-item mlb">
+                   <label>NAME*</label>
+                   <input type="text" name="name" class="" id="name" required="">
+              </div>
+              <div class="grid-item mlb">
+                <label>EMAIL</label>
+                <input type="text" name="email" class="" id="email">
+                          
+               </div>
+               <div class="grid-item mlb">
+                <label>CONTACT NUMBER</label>
+                <input type="text" name="contact_no" class="" id="contact_no">
+                       
+                              
+                   </div>
+          </div>
+                
+          <input type="submit" value="submit" class="formCreate__input custom-submit-btn btn submitbtn">      
+               
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Delete Contact</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
           
-                <table id="table_id" class="row-border" width="100%">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>BOOKING DATETIME</th>
-                            <th>PICKUP DATETIME</th>
-                            <th>PICKUP LOCATION</th>
-                            <th>PICKUP CITY</th>
-                            <th>DROP CITY(S)</th>
-                            <th>TOUR TYPE</th>
-                            <th>ASSIGNED DRIVER|TAXI</th>
-                            <th>PASSENGER DETAILS</th>
-                            <th>CANCELLATION REASON</th>
-                            <th>CANCEL DATETIME</th>
-                            <th>DETAILS</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>TP231</td>
-                            <td>16-11-2018 17:35</td>
-                            <td>15-11-2018 17:34</td>
-                            <td width="100%">F.H Enterprises, Ajmer, Pydhonie, Bhuleshwar, Mumbai</td>
-                            <td>Mumbai</td>
-                            <td>Chakan</td>
-                            <td>Outstation</td>
-                            <td>	sandeep Joshi | 9899701993 
-                                XUV | DL97869879 </td>
-                            <td>Chetan | 952058187</td>
-                            <td>
-                                not feeling well.
-                            </td>
-                            <td>
-                                19-11-2018 12:54
-                            </td>
-                            <td>
-                              <a href="cancelleddetails.html"  target="_blank" >Details</a>
-                            </td>  
-                        </tr>
-                      
-                          <tr>
-                            <td>TP231</td>
-                            <td>16-11-2018 17:35</td>
-                            <td>15-11-2018 17:34</td>
-                            <td width="100%">F.H Enterprises, Ajmer, Pydhonie, Bhuleshwar, Mumbai</td>
-                            <td>Mumbai</td>
-                            <td>Chakan</td>
-                            <td>Outstation</td>
-                            <td>	sandeep Joshi | 9899701993 
-                                XUV | DL97869879 </td>
-                            <td>Chetan | 952058187</td>
-                            <td>
-                                not feeling well.
-                            </td>
-                            <td>
-                                19-11-2018 12:54
-                            </td>
-                            <td>
-                              <a href="cancelleddetails.html"  target="_blank" >Details</a>
-                            </td>  
-                       
-                        </tr>
-                       
-                    </tbody>
-                </table>
+                <label>Do you want to Delete this Contact ?</label>
+                <form method="post" id="cancel-form"  action="/operator/self-bookings/271/cancel/Archived Unassigned Bookings">
+                  
+                </form>
+             
+             
+                  <button type="submit" class="btn btn-default custom-submit-btn modal-button modal-yes">Yes</button>
+                  <button type="button" class="btn btn-default modal-button close-button" data-dismiss="modal">Close</button>
+                
+        </div>
+      </div>
+    </div>
+  </div> <!-- /Modal -->
+           <!-- </form>-->
 
             </div><!--/container closed-->
             <!-- Optional JavaScript -->
@@ -197,20 +192,14 @@
       <script type="text/javascript" src="js/dataTables.responsive.js"></script>
       
       <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
-     
+      <script src ="js/app.js"></script>
      
       <script type="text/javascript">
    
            $(function () {
        
-        var table = $('#table_id').removeAttr('width').DataTable( {
-        responsive: true,
-        columnDefs: [
-            { width: 90, targets: 0 }
-        ]   ,
-        scrollY:       "160px",
-        
-        scrollX:        false
+        $('#table_id').DataTable( {
+        responsive: true
     } );
     } );   
       </script>

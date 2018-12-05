@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/datatables.css">
+    <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap4.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <title>Driver Details</title>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg mb-3">
+            <div id="fh5co-logo"><a href="index.html" target="_blank" class="navbar-brand">Fleet247<!--<span class ="logo-dot">.</span>--></a></div>
+               
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+                        <svg class="svg-icon" viewBox="0 0 20 20">
+                                <path d="M10,1.445c-4.726,0-8.555,3.829-8.555,8.555c0,4.725,3.829,8.555,8.555,8.555c4.725,0,8.555-3.83,8.555-8.555C18.555,5.274,14.725,1.445,10,1.445 M10,17.654c-4.221,0-7.654-3.434-7.654-7.654c0-4.221,3.433-7.654,7.654-7.654c4.222,0,7.654,3.433,7.654,7.654C17.654,14.221,14.222,17.654,10,17.654 M14.39,10c0,0.248-0.203,0.45-0.45,0.45H6.06c-0.248,0-0.45-0.203-0.45-0.45s0.203-0.45,0.45-0.45h7.879C14.187,9.55,14.39,9.752,14.39,10 M14.39,12.702c0,0.247-0.203,0.449-0.45,0.449H6.06c-0.248,0-0.45-0.202-0.45-0.449c0-0.248,0.203-0.451,0.45-0.451h7.879C14.187,12.251,14.39,12.454,14.39,12.702 M14.39,7.298c0,0.248-0.203,0.45-0.45,0.45H6.06c-0.248,0-0.45-0.203-0.45-0.45s0.203-0.45,0.45-0.45h7.879C14.187,6.848,14.39,7.051,14.39,7.298">
+                                </path>
+                              </svg>
+                  </span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" target="_blank">Dashboard</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                   
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Self-Booking
+                      </a>
+                     
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="addbooking.html" target="_blank">Add Booking</a>
+                        <a class="dropdown-item" href="activeunassigned.html" target="_blank">Active Unassigned</a>
+                        
+                        <a class="dropdown-item" href="activeunassigned.html" target="_blank">Active Assigned</a>
+                        <a class="dropdown-item" href="archivedunassigned.html"  target="_blank">Archived Unassigned</a>
+                        <a class="dropdown-item" href="archivedassigned.html" target="_blank" >Archived Assigned</a>
+                        <a class="dropdown-item" href="cancelledbookings.html"  target="_blank">Cancelled</a>
+
+                      </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Client
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="addclient.html" target="_blank">Add Client</a>
+                              <a class="dropdown-item" href="viewclient.html" target="_blank">View Client</a>
+                              
+                              
+      
+                            </div>
+                          </li>
+                          <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Driver
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="adddriver.html" target="_blank">Add Driver</a>
+                                  <a class="dropdown-item" href="viewdriver.html" target="_blank">View Driver</a>
+                                </div>
+                              </li>
+                              <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Taxis
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                      <a class="dropdown-item" href="addtaxis.html" target="_blank">Add Taxis</a>
+                                      <a class="dropdown-item" href="viewvehicle.html" target="_blank">View Taxis</a>
+                                    </div>
+                                  </li>
+                                  <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Billing
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                          <a class="dropdown-item" href="#">Unbilled</a>
+                                          <a class="dropdown-item" href="#">Billed:Unpaid</a>
+                                          <a class="dropdown-item" href="#">Billed:Paid</a>
+                                          <a class="dropdown-item" href="self-billing.html" target="_blank">Client Self Billing</a>
+                                        </div>
+                                      </li>
+                                      <a href="support.html" target="_blank"><button class="custom-submit-btn btn btn-default">Support</button>    
+                                      </a>                         
+                                                      
+                                                      
+                  </ul>
+                       
+                       
+                </div>
+              </nav>
+              <!--/navigation-->
+              <div class="page-container">
+                    <div class="breadcrumb1">
+                   
+                        
+                          <span><a href="viewdriver.html"  target="_blank">Drivers</a></span>
+                          <span class="tripheading">/Driver Details</span>
+                      
+                      </div>
+                      <div class="row">
+                            <div class="col-md-9">
+                      <div class="form-containerwith2cols">
+                        <div class="formCreate__head">
+                                
+                             
+                    <!--<form id="addBookingForm" class="formCreate__form" method="post" action="">-->
+                       
+                        <div class="form-item">
+                            <label class="addbookinglabel">DRIVER DETAILS</label>
+                           
+                          </div>
+                        </div><!--/head-->
+                        <div class="formCreate__content grid-form1">
+                           
+                            <div class="grid-item item mlb">
+                                <label>NAME</label>
+                                <p>bb bb</p>
+                                </div>
+                                <div class="grid-item item mlb">
+                                    <label>EMAIL</label>
+                                    <p>bb@bb.bb</p>
+                                    </div>
+              
+                                    <div class="grid-item item mlb">
+                                        <label>VERIFICATION STATUS</label>
+                                        <div id="pending" class="driver-detail-status">
+                                            <span class="verification-msg pending">PENDING</span>
+                                          </div>
+                                        </div>
+              
+                                        <div class="grid-item item mlb">
+                                            
+                                                <label>STATUS</label>
+                                                <div class="toggle switch client-active toggle-on">
+                                                        <div class="toggle-text-off">Inactive</div>
+                                                        <div class="glow-comp"></div>
+                                                        <div class="toggle-button"></div>
+                                                        <div class="toggle-text-on">Active</div>
+                                                      </div>
+                                            </div>
+              
+                                        <div class="grid-item item mlb">
+                                          
+                                                <label>LICENSE NUMBER</label>
+                                                <p>bb</p>
+                                            
+                                            </div>
+              
+                                            <div class="grid-item item mlb">
+                                              
+                                                    <label>PHONE</label>
+                                                    <p>4455443344</p>
+                                                
+                                                </div>
+              
+                                                <div class="grid-item item mlb">
+                                                    <label>COMMENTS</label>
+                                                    <p>mh</p>
+                                                  </div> 
+              
+                                                  <div class="grid-item item mlb ">
+                                                    <label>TRIP DETAILS</label>
+                                                    <p><a href="drivertripdetails.html" target="_blank">Trip Details</a></p>
+                                                  </div>
+              
+                                                  <div class="grid-item item mlb">
+                                                    <label>TRACK</label>
+                                                    <p><a href="http://127.0.0.1:8000/operator/drivers/66/track" target="_blank">Track Driver</a></p>
+                                                  </div>
+                                                       
+                                                  <div class="grid-item item ml mlb">
+                                                    <label>RESET PASSWORD</label>
+                                                    <p>
+                                                      <a href="" data-toggle="modal" data-target="#resetModal">
+                                                        <svg class="lock svg-inline--fa fa-unlock-alt fa-w-14" aria-hidden="true" data-prefix="fa" data-icon="unlock-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M400 256H152V152.9c0-39.6 31.7-72.5 71.3-72.9 40-.4 72.7 32.1 72.7 72v16c0 13.3 10.7 24 24 24h32c13.3 0 24-10.7 24-24v-16C376 68 307.5-.3 223.5 0 139.5.3 72 69.5 72 153.5V256H48c-26.5 0-48 21.5-48 48v160c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zM264 408c0 22.1-17.9 40-40 40s-40-17.9-40-40v-48c0-22.1 17.9-40 40-40s40 17.9 40 40v48z"></path></svg><!-- <i class="fa fa-unlock-alt"></i> -->
+                                                      </a>
+                                                    </p>
+                                                  </div>
+              
+                                                               
+                                     
+                      </form>
+                 
+              
+              </div>
+            </div>         
+                
+        </div>     <!--/add driver-->    
+        <div class=" col-md-3 col-sm-6 col-xs-12 sticky-profile">
+                <div class="profile">
+        
+                            <div class="profile__img">
+                    <img src="http://127.0.0.1:8000/storage/driver_images/14TsIcUPR43pjg23tDpiL5tFRakh4WDQfuPSRcXw.png">
+                  </div>
+        <div class="grid-modal-add-driver">
+            <div class="grid-item mlb">
+                    <label class="">NAME</label>
+            </div>
+            <div class="grid-item mlb">
+                    <p class="">bb bb</p>
+            </div>
+            <div class="grid-item mlb">
+                    <label class="">PHONE</label>
+            </div>
+            <div class="grid-item mlb">
+                    <p class="">4455443344</p>
+            </div>
+            <div class="grid-item mlb">
+                    <label class="">EMAIL</label>
+            </div>
+            <div class="grid-item mlb">
+                    <p class="">bb@bb.bb</p>
+            </div>
+            <div class="grid-item mlb">
+                    <label class="">RATING</label>
+            </div>
+            <div class="grid-item mlb">
+                    <p class="">Rating: Not Available</p>
+            </div>
+        </div>
+                
+                 
+        
+                 
+                          </div>
+              </div>
+              <div class="col-md-9">
+                  <div class="form-container-details">
+                    <div class="formCreate__head">
+                            
+                         
+                <form id="addBookingForm" class="formCreate__form" method="post" action="">
+                    <div class="formitem">
+                        <label class="addbookinglabel">UPLOAD DOCUMENTS</label>
+                       
+                      </div>
+                    </div>
+                    <div class="grid-form1">
+                        <div class="grid-item mlb">
+                            <label  class="">UPLOAD DOCUMENT</label>
+                            <select >
+                                <option>
+                                    Driver Id |Voter Id
+                                </option>
+                            </select>
+                        </div>
+                        <div class="grid-item mlb">
+                                <label class="">BROWSE</label>
+                                <div class="upload-btn-wrapper">
+                                        <button class="custom-file-btn">Select File</button>
+                                        <input type="file" class="" name="driver_document" id="doc" required="">
+                                        <p id="file_name"></p>
+                                      </div>
+                            </div>
+                            <div class="grid-item mlb">
+                                <label class="">COMMENT</label>
+                                <textarea class=" custom-textarea" name="document_comment" rows="1" cols="30" maxlength-"100"=""></textarea>
+                            </div>
+                            <div class="grid-item mlb">
+                                <label class="">
+                                    UPLOAD
+                                </label>
+                                <input type="submit" value="submit" class="custom-submit-btn btn btn-default" name="">
+                            </div>
+                    </div>
+                </div><!--/form-container-->
+                    </div>
+
+                  
+         
+                              <div class="col-md-9">
+                                    <div class="form-container-details">
+                                      <div class="formCreate__head">
+                                              
+                                           
+                                  <form id="addBookingForm" class="formCreate__form" method="post" action="">
+                                      <div class="formitem">
+                                          <label class="addbookinglabel">LINKED TAXI - DETACHED</label>
+                                         
+                                        </div>
+                                      </div>
+                                      <div class="grid-form1">
+                                          <div class="grid-item mlb">
+                                              <label  class="">DRIVER</label>
+                                              <select >
+                                                  <option>
+                                                      Driver Id |Voter Id
+                                                  </option>
+                                              </select>
+                                          </div>
+                                          <div class="grid-item mlb">
+                                                  <label class="">TAXI</label>
+                                                  <select >
+                                                        <option>
+                                                            Driver Id |Voter Id
+                                                        </option>
+                                                    </select>
+                                              </div>
+                                              <div class="grid-item mlb">
+                                                  <label class="">ATTACH</label>
+                                                  
+                                                  <button type="button" class=" custom-submit-btn btn">ATTACH</button>
+                                              </div>
+                                              <div class="grid-item mlb">
+                                                    <label class="">UNLINK</label>
+                                                  
+                                                    <button type="button" class=" custom-submit-btn btn">UNLINK</button>
+                                              </div>
+                                      </div>
+                                  </div><!--/form-container-->
+                                      </div>       
+                                      
+                                      
+
+
+                              <div class="col-md-9">
+                                    <div class="form-container-details">
+                                      <div class="formCreate__head">
+                                              
+                                           
+                                  <form id="addBookingForm" class="formCreate__form" method="post" action="">
+                                      <div class="formitem">
+                                          <label class="addbookinglabel">ACCOUNT DETAILS</label>
+                                         
+                                        </div>
+                                      </div>
+                                      <div class="grid-form1">
+                                          <div class="grid-item mlb">
+                                              <label  class="">BENEFICIARY NAME</label>
+                                              <input type="text" class="" name="beneficiary_name" required="">
+                                          </div>
+                                          <div class="grid-item mlb">
+                                                <label>ACCOUNT NUMBER</label>
+                                                <input type="text" class="" name="beneficiary_account_number" required="">
+                                              </div>
+                                              <div class="grid-item mlb">
+                                                <label>IFSC CODE</label>
+                                                <input type="text" class="" name="ifsc_code" required="">
+                                                          
+                                              </div>
+                                              <div class="grid-item mlb">
+                                                    <label class="">ADD</label>
+                                                  
+                                                    <button type="button" class=" custom-submit-btn btn">ADD</button>
+                                              </div>
+                                      </div>
+                                  </div><!--/form-container-->
+                                      </div>      
+
+                                      <div class="col-md-9">
+                                            <div class="form-container-details">
+                                              <div class="formCreate__head">
+                                                      
+                                                   
+                                          <form id="addBookingForm" class="formCreate__form" method="post" action="">
+                                              <div class="formitem">
+                                                  <label class="addbookinglabel">FEEDBACK & RATING</label>
+                                                 
+                                                </div>
+                                              </div>
+                                              <div class="grid-form1">
+                                                 <div lass="mlb">
+                                                      <label class="mlb">REVIEWS</label>
+                                                     <p class="mlb">No reviews yet.</p>
+                                                    </div>
+                                                  
+                                              </div>
+                                          </div><!--/form-container-->
+                                              </div>                           
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Reset Password</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  
+                        <label>Do you want to Reset Password ?</label>
+                        <form method="post" id="cancel-form"  action="/operator/self-bookings/271/cancel/Archived Unassigned Bookings">
+                          
+                        </form>
+                     
+                     
+                          <button type="submit" class="btn btn-default custom-submit-btn modal-button modal-yes">Yes</button>
+                          <button type="button" class="btn btn-default modal-button close-button" data-dismiss="modal">Close</button>
+                        
+                </div>
+              </div>
+            </div>
+          </div> <!-- /Modal -->
+                   <!-- </form>-->
+        
+                    </div><!--/container closed-->
+
+
+                    </div><!--/page-container-->
+                    
+            <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+
+    
+      <script type="text/javascript" src="js/datatables.js"></script>
+      <script type="text/javascript" src="js/jquery.dataTables.js"></script>
+      <script type="text/javascript" src="js/dataTables.responsive.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+      <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+      <script src ="js/app.js"></script>
+     
+      <script type="text/javascript">
+   
+           $(function () {
+       
+            $("select").select2({
+    width: 'resolve' // need to override the changed default
+  });
+
+  $('.item').on('click', '.toggle', function () {
+  
+                if ($(this).hasClass('toggle-on')) {
+                    $(this).removeClass("toggle-on");
+                } else {
+                    $(this).addClass("toggle-on");
+                }
+            });
+    } );   
+      </script>
+      
+    </body>
+    </html>
+    

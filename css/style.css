@@ -195,7 +195,7 @@ label {
 input {
     display:block;
  }
- input,select,textarea{
+ input[type="text"],select,textarea{
      width:90%;
      background-color: transparent;
     -webkit-box-shadow: none;
@@ -206,7 +206,7 @@ input {
     display: block;
     
     height: 34px;
-    padding:0px 20px 12px 8px;
+    padding:0px 20px 0px 8px;
     font-size: 14px;
     line-height: 1.42857143;
     color: #555;
@@ -250,7 +250,7 @@ input {
   
    
 }
-.grid-form,.grid-form1
+.grid-form,.grid-form1,.grid3
     {
         display: grid;
     grid-template-columns: 1fr;
@@ -414,7 +414,7 @@ transition: all .2s ease-in-out;
 .trash{
     color: #e74c3c;
 }
-.trash,.users,.suitcase,.rupee,.chart-line,.track1{
+.trash,.users,.suitcase,.rupee,.chart-line,.track1,.lock{
   
     width:20px;
     height:20px;
@@ -580,7 +580,7 @@ transition: all .2s ease-in-out;
 }
 .page-container
 {
-    width:95%;
+    width:72%;
     margin:auto;
 }
 .form-container-details
@@ -590,6 +590,23 @@ margin-bottom: 10px;
 padding:10px 0 10px 0;
 border-radius: 3px;
 }
+/***DRIVER DETAILS PAGE****/
+.form-containerwith2cols
+{
+background-color: #fff;
+margin-bottom: 10px;
+padding:10px 0 10px 0;
+border-radius: 3px;
+box-shadow: 0 3px 16px -2px #ccc;
+}
+.profile {
+    background-color: #fff;
+    width: 100%;
+    padding: 4% 0;
+    border-radius: 3px;
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.15);
+}
+
 
 /**STYLES FOR NAV TABS***/
 .nav-tabs .nav-link.active  {
@@ -619,9 +636,55 @@ border-radius: 3px;
 .pending {
     background-color: #f1c40f;
 }
+.profile__img {
+    text-align: center;
+  
+    padding: 6% 0;
+}
+.profile__img img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+/*
+
+.select2-selection__rendered {
+  margin: 10px;
+}
+
+
+.select2-selection__arrow {
+  margin: 10px;
+}
+
+.select2-selection {
+  -webkit-box-shadow: 0;
+  box-shadow: 0;
+  background-color: #fff;
+  border: 0;
+  border-radius: 0;
+  color: #555555;
+  font-size: 14px;
+  outline: 0;
+  min-height: 48px;
+  text-align: left;
+}
+
+.select2-selection__rendered {
+  margin: 10px;
+}
+
+.select2-selection__arrow {
+  margin: 10px;
+}*/
 @media screen and (min-width: 1028px) {
     
  /*MODAL STYLES FOR ADD TAXI*/
+ .grid3
+    {
+        display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
 .grid-modal-add-driver
 {
     display:grid;
@@ -656,7 +719,16 @@ border-radius: 3px;
         font-weight: bold;
         font-size: 16px;
      }
-
+.paddingclass
+{
+    margin-left:2%;
+}
+.invoice-detail-row {
+    
+    margin: 2% 5%;
+    background-color: #fbfbfb;
+    border-radius: 3px;
+}
     /**STYLES FOR ADD CLIENT ********/
     .driverVehicle__img
     {
