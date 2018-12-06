@@ -602,7 +602,7 @@ box-shadow: 0 3px 16px -2px #ccc;
 .profile {
     background-color: #fff;
     width: 100%;
-    padding: 4% 0;
+    padding: 4%;
     border-radius: 3px;
     box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.15);
 }
