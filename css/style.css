@@ -646,6 +646,9 @@ box-shadow: 0 3px 16px -2px #ccc;
     height: 180px;
     border-radius: 50%;
 }
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding-left:3px;
+}
 /*
 
 .select2-selection__rendered {
