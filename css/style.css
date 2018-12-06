@@ -707,10 +707,10 @@ box-shadow: 0 3px 16px -2px #ccc;
  
         width: 20%;
     }
-    .ml
+    /*.ml
     {
         margin-left: 10px;
-    }
+    }*/
     .grid-form1
     {
         display: grid;
