@@ -169,7 +169,7 @@ a:focus {
     background-color: #fff;
     margin:auto;
    
-    padding:0px 0 10px 0;
+    padding:0px 0 10px 17px;
    
     margin-bottom: 50px;
     border-radius: 3px;
@@ -236,7 +236,7 @@ input {
     padding: .7% 0%;
     padding-bottom: 1.5%;
     border-bottom: 1px solid #ccc;
-    margin: 2%;
+    /*margin: 2%;*/
 }
 .formitem
 {
@@ -587,7 +587,7 @@ transition: all .2s ease-in-out;
 {
 background-color: #fff;
 margin-bottom: 10px;
-padding:10px 0 10px 0;
+padding:10px 0 10px 17px;
 border-radius: 3px;
 }
 /***DRIVER DETAILS PAGE****/
