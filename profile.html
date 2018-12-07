@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+ <link rel="stylesheet" type="text/css" href="css/datatables.css">
+ <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap4.css">
+ <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
+ <link rel="stylesheet" type="text/css" href="css/style.css">
+ <link rel="stylesheet" type="text/css" href="css/responsive.dataTables.css">
+    <title>Details</title>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg mb-3">
+            <div id="fh5co-logo"><a href="https://fleet247.in" target="_blank" class="navbar-brand">Fleet247<!--<span class ="logo-dot">.</span>--></a></div>
+               
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+                        <svg class="svg-icon" viewBox="0 0 20 20">
+                                <path d="M10,1.445c-4.726,0-8.555,3.829-8.555,8.555c0,4.725,3.829,8.555,8.555,8.555c4.725,0,8.555-3.83,8.555-8.555C18.555,5.274,14.725,1.445,10,1.445 M10,17.654c-4.221,0-7.654-3.434-7.654-7.654c0-4.221,3.433-7.654,7.654-7.654c4.222,0,7.654,3.433,7.654,7.654C17.654,14.221,14.222,17.654,10,17.654 M14.39,10c0,0.248-0.203,0.45-0.45,0.45H6.06c-0.248,0-0.45-0.203-0.45-0.45s0.203-0.45,0.45-0.45h7.879C14.187,9.55,14.39,9.752,14.39,10 M14.39,12.702c0,0.247-0.203,0.449-0.45,0.449H6.06c-0.248,0-0.45-0.202-0.45-0.449c0-0.248,0.203-0.451,0.45-0.451h7.879C14.187,12.251,14.39,12.454,14.39,12.702 M14.39,7.298c0,0.248-0.203,0.45-0.45,0.45H6.06c-0.248,0-0.45-0.203-0.45-0.45s0.203-0.45,0.45-0.45h7.879C14.187,6.848,14.39,7.051,14.39,7.298">
+                                </path>
+                              </svg>
+                  </span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" target="_blank">Dashboard</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                   
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Self-Booking
+                      </a>
+                     
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="addbooking.html" target="_blank">Add Booking</a>
+                        <a class="dropdown-item" href="activeassigned.html"  target="_blank">Active Unassigned</a>
+                        
+                        <a class="dropdown-item" href="activeassigned.html"  target="_blank">Active Assigned</a>
+                        <a class="dropdown-item" href="archivedunassigned.html"  target="_blank">Archived Unassigned</a>
+                        <a class="dropdown-item" href="archivedassigned.html"  target="_blank">Archived Assigned</a>
+                        <a class="dropdown-item" href="cancelledbookings.html" target="_blank">Cancelled</a>
+
+                      </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Client
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="addclient.html" target="_blank">Add Client</a>
+                              <a class="dropdown-item" href="viewclient.html" target="_blank">View Client</a>
+                              
+                              
+      
+                            </div>
+                          </li>
+                          <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Driver
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="adddriver.html" target="_blank">Add Driver</a>
+                                  <a class="dropdown-item" href="viewdriver.html" target="_blank">View Driver</a>
+                                </div>
+                              </li>
+                              <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Taxis
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                      <a class="dropdown-item" href="addtaxis.html" target="_blank">Add Taxis</a>
+                                      <a class="dropdown-item" href="viewvehicle.html" target="_blank">View Taxis</a>
+                                    </div>
+                                  </li>
+                                  <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Billing
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                          <a class="dropdown-item" href="#">Unbilled</a>
+                                          <a class="dropdown-item" href="#">Billed:Unpaid</a>
+                                          <a class="dropdown-item" href="#">Billed:Paid</a>
+                                          <a class="dropdown-item" href="self-billing.html" target="_blank">Client Self Billing</a>
+                                        </div>
+                                      </li>
+
+                                      <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Hi Juliet
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                          <a class="dropdown-item" href="profile.html" target="_blank">Profile</a>
+                                          <a class="dropdown-item" href="changepassword.html" target="_blank">Change Password</a>
+                                          <a class="dropdown-item" href="" target="_blank">Logout</a>
+                                          
+                                        </div>
+                                      </li>
+                                      <a href="support.html" target="_blank"><button class="custom-submit-btn btn btn-default">Support</button>    
+                                      </a>                         
+                                                      
+                                                      
+                  </ul>
+                       
+                       
+                </div>
+              </nav>
+              <!--/navigation-->
+            
+              <div class="form-container">
+                    <div class="formCreate__head">
+                    
+                 
+                            <form id="addBookingForm" class="formCreate__form" method="post" action="">
+                                <div class="formitem">
+                                    <label class="addbookinglabel">DETAILS</label>
+                                   
+                                  </div>
+                                </div>
+                       <div class="grid3">
+                           <div class="grid-item">
+                            <label>REGISTERED NAME</label>
+                            <p>Emard-Moore</p>
+                           </div>
+
+                           <div class="grid-item">
+                            <label>CONTACT NAME</label>
+                            <p>Juliet</p>
+                            </div>
+
+                            <div class="grid-item">
+                                <label>CONTACT EMAIL</label>
+                                <p>mcdermott.ezekiel@yahoo.com</p>
+                                </div>
+                            <div class="grid-item">
+                               <label>CONTACT PHONE NUMBER</label>
+                                <p>3920583207</p>
+                            </div>
+                            <div class="grid-item">
+                             
+                                    <label>PAN</label>
+                                    <p>FHADPVBUK</p>
+                               
+                            </div>   
+                            <div class="grid-item">
+                               
+                                    <label>GSTIN</label>
+                                    <p>JIXROHQ</p>
+                                
+                            </div>   
+                            <div class="grid-item">
+                                
+                                    <label>REGISTERED ADDRESS</label>
+                                    <p>Anibal Mountains 29397 Chaya Square Apt. 850, New Delhi - 487071</p>
+                                  
+                            </div>   
+                          
+                       </div>
+                    </form>
+                      </div>
+                   
+                
+
+                <div class="form-container">
+                        <div class="formCreate__head">
+                        
+                     
+                                <form id="addBookingForm" class="formCreate__form" method="post" action="">
+                                    <div class="formitem">
+                                        <label class="addbookinglabel">REGISTERED CONTACTS</label>
+                                       
+                                      </div>
+                                    </div>
+                                    <table id="table_id" class="row-border"  width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th>DESIGNATION</th>
+                                                <th>NAME</th>
+                                                <th>EMAIL</th>
+                                                <th>CONTACT</th>
+                                                <th>DELETE</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Pediatricians</td>
+                                                <td>Veda</td>
+                                                <td>william31@gmail.com</td>
+                                                <td>8909876545</td>
+                                               
+                                                <td>
+                                                    <a href="" class="" data-toggle="modal" data-target="#exampleModal">
+                                                        <svg class=" trash svg-inline--fa fa-trash-alt fa-w-14" aria-hidden="true" data-prefix="fa" data-icon="trash-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M0 84V56c0-13.3 10.7-24 24-24h112l9.4-18.7c4-8.2 12.3-13.3 21.4-13.3h114.3c9.1 0 17.4 5.1 21.5 13.3L312 32h112c13.3 0 24 10.7 24 24v28c0 6.6-5.4 12-12 12H12C5.4 96 0 90.6 0 84zm416 56v324c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48V140c0-6.6 5.4-12 12-12h360c6.6 0 12 5.4 12 12zm-272 68c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208z"></path></svg>
+                                                    </a>
+                                                </td>
+                                                 
+                                                    
+                                            </tr>
+                                           
+                                        </tbody>
+                                    </table>
+                                    <a href="" data-toggle="modal" data-target=".addmodal"  class="button formCreate__input custom-submit-btn btn submitbtn">ADD CONTACT</a>
+                </div>
+                                    <div class="form-container">
+                                                <div class="formCreate__head">
+                                                
+                                             
+                                                        <form id="addBookingForm" class="formCreate__form" method="post" action="">
+                                                            <div class="formitem">
+                                                                <label class="addbookinglabel">GARAGE LOCATION</label>
+                                                               
+                                                              </div>
+                                                            </div>
+                                                        </form>
+                                                   </div>
+                                                   <div class="form-container">
+                                                                <div class="formCreate__head">
+                                                                
+                                                             
+                                                                        <form id="addBookingForm" class="formCreate__form" method="post" action="">
+                                                                            <div class="formitem">
+                                                                                <label class="addbookinglabel">ACCOUNT DETAILS</label>
+                                                                               
+                                                                              </div>
+                                                                            </div>
+                                                                        </form>
+                                                                   </div>
+                                                
+                                               
+                                            
+                                         
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Delete Contact</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              
+                                    <label>Do you want to Delete this Contact ?</label>
+                                    <form method="post" id="cancel-form"  action="/operator/self-bookings/271/cancel/Archived Unassigned Bookings">
+                                      
+                                    </form>
+                                 
+                                 
+                                      <button type="submit" class="btn btn-default custom-submit-btn modal-button modal-yes">Yes</button>
+                                      <button type="button" class="btn btn-default modal-button close-button" data-dismiss="modal">Close</button>
+                                    
+                            </div>
+                          </div>
+                        </div>
+                      </div> <!-- /Modal -->
+
+
+                       <!-- Modal2 -->
+                    <div class="modal fade addmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Add Contact</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              
+                                   
+                                    <form method="post" id="cancel-form"  action="/operator/self-bookings/271/cancel/Archived Unassigned Bookings">
+                                      <div class="grid-form">
+                                        <div class="grid-item">
+                                        <input class="details__modal--input" type="text" placeholder="Name" id="add-operator-contact-name" required="">
+                                        </div>
+
+                                        <div class="grid-item">
+                                        <input class="form-control details__modal--input" type="text" placeholder="Designation" id="add-operator-contact-designation">
+                                        </div>
+
+                                        <div class="grid-item">
+                                        <input class="form-control details__modal--input" type="text" placeholder="Email" id="add-operator-contact-email" required="">
+                                        </div>
+
+                                        <div class="grid-item">
+                                        <input class="form-control details__modal--input" type="text" placeholder="Contact Number" id="add-operator-contact-contact_no" required="">
+                                        </div>
+                                        </div>
+
+                                    </form>
+                                 
+                                 
+                                      <button type="submit" class="btn btn-default custom-submit-btn modal-button modal-yes">Yes</button>
+                                      <button type="button" class="btn btn-default modal-button close-button" data-dismiss="modal">Close</button>
+                                    
+                            </div>
+                          </div>
+                        </div>
+                      </div> <!-- /Modal2 -->
+                               <!-- </form>-->
+                    
+                          </div>
+                       
+
+                         
+                                                                                     
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="js/datatables.js"></script>
+      <script type="text/javascript" src="js/jquery.dataTables.js"></script>
+      <script type="text/javascript" src="js/dataTables.responsive.js"></script>
+      
+      <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+
+  <script type="text/javascript">
+  
+  $(function () {
+       
+       $('#table_id').DataTable( {
+       responsive: true
+   } );
+  });
+ 
+  </script>
+</body>
+</html>                               

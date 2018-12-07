@@ -680,6 +680,15 @@ box-shadow: 0 3px 16px -2px #ccc;
 .select2-selection__arrow {
   margin: 10px;
 }*/
+.longinputfield
+{
+    width:60%;
+}
+.onlysinglegridcol
+{ 
+   display:grid;
+   grid-template-columns: 1fr;
+}
 @media screen and (min-width: 1028px) {
     
  /*MODAL STYLES FOR ADD TAXI*/
