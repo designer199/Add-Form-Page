@@ -15,7 +15,7 @@
   
   
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>View Vehicle</title>
+    <title>Bills Paid</title>
 </head>
 <body>
         <nav class="navbar navbar-expand-lg mb-3">
@@ -122,7 +122,7 @@
                      
             <!--<form id="addBookingForm" class="formCreate__form" method="post" action="">-->
                 <div class="formitem">
-                    <label class="addbookinglabel">Unbilled Invoices</label>
+                    <label class="addbookinglabel">Bills Unpaid</label>
                    
                   </div>
                 </div><!--/head-->
@@ -140,7 +140,8 @@
                             <th>ASSIGNED DRIVER</th>
                             <th>PASSENGER DETAILS</th>
                             <th>INVOICE AMOUNT</th>
-                            <th>GENERATE BILL</th>
+                            <th>BILL AMOUNT</th>
+                            <th>AMOUNT RECEIVED</th>
                             <th>DETAILS</th>
                         </tr>
                     </thead>
@@ -161,15 +162,18 @@
                                     ₹ 10704<a href=""download> Download Slip</a>
                             </td>
                             <td>
-                                    <a href="generate.html" target="_blank">
-                                      Generate
-                                    </a>
+                                    ₹ 10704<a href=""download> Download Bill</a>
                                   </td>
                             <td>
-                                    <a href="billeddetails.html" target="_blank">
+                                    ₹ 10704
+                              
+                              
+                            </td>
+                            <td>
+                                    <a href="details.html" target="_blank">
                                            Details
                                           </a>
-                              </div>
+                             
                               
                             </td>
                         </tr>
@@ -188,25 +192,27 @@
                       
                          
                           <td>
-                                  ₹ 10704 Download Slip
+                                  ₹ 10704 <a href=""download>Download Slip</a>
                           </td>
                           <td>
-                                  <a href="generate.html" target="_blank">
-                                    Generate
-                                  </a>
+                                ₹ 10704 <a href=""download>Download Bill</a>
                                 </td>
+                                <td>
+                                        ₹ 10704
+                                  
+                                </td>     
                           <td>
-                                  <a href="" target="_blank">
+                                  <a href="details.html" target="_blank">
                                          Details
                                         </a>
-                            </div>
+                           
                             
                           </td>
                       </tr>
                      
                     </tbody>
                 </table>
-             
+            </div>
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">

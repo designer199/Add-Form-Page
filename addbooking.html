@@ -1,244 +1,263 @@
 <!DOCTYPE html>
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/select2.css">
-    
-    <link rel="stylesheet" href="css/jquery.datetimepicker.css" /> 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Add Booking</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/select2.css">
+
+  <link rel="stylesheet" href="css/jquery.datetimepicker.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Add Booking</title>
 </head>
+
 <body>
-        <nav class="navbar navbar-expand-lg mb-3">
-            <div id="fh5co-logo"><a href="https://fleet247.in" target="_blank" class="navbar-brand">Fleet247<!--<span class ="logo-dot">.</span>--></a></div>
-               
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon">
-                        <svg class="svg-icon" viewBox="0 0 20 20">
-                                <path d="M10,1.445c-4.726,0-8.555,3.829-8.555,8.555c0,4.725,3.829,8.555,8.555,8.555c4.725,0,8.555-3.83,8.555-8.555C18.555,5.274,14.725,1.445,10,1.445 M10,17.654c-4.221,0-7.654-3.434-7.654-7.654c0-4.221,3.433-7.654,7.654-7.654c4.222,0,7.654,3.433,7.654,7.654C17.654,14.221,14.222,17.654,10,17.654 M14.39,10c0,0.248-0.203,0.45-0.45,0.45H6.06c-0.248,0-0.45-0.203-0.45-0.45s0.203-0.45,0.45-0.45h7.879C14.187,9.55,14.39,9.752,14.39,10 M14.39,12.702c0,0.247-0.203,0.449-0.45,0.449H6.06c-0.248,0-0.45-0.202-0.45-0.449c0-0.248,0.203-0.451,0.45-0.451h7.879C14.187,12.251,14.39,12.454,14.39,12.702 M14.39,7.298c0,0.248-0.203,0.45-0.45,0.45H6.06c-0.248,0-0.45-0.203-0.45-0.45s0.203-0.45,0.45-0.45h7.879C14.187,6.848,14.39,7.051,14.39,7.298">
-                                </path>
-                              </svg>
-                  </span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" target="_blank">Dashboard</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                   
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Self-Booking
-                      </a>
-                     
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="addbooking.html" target="_blank">Add Booking</a>
-                        <a class="dropdown-item" href="activeunassigned.html"  target="_blank">Active Unassigned</a>
-                        
-                        <a class="dropdown-item" href="activeassigned.html" target="_blank">Active Assigned</a>
-                        <a class="dropdown-item" href="archivedunassigned.html" target="_blank">Archived Unassigned</a>
-                        <a class="dropdown-item" href="archivedassigned.html" target="_blank">Archived Assigned</a>
-                        <a class="dropdown-item" href="cancelledbookings.html" target="_blank">Cancelled</a>
+  <nav class="navbar navbar-expand-lg mb-3">
+    <div id="fh5co-logo"><a href="https://fleet247.in" target="_blank" class="navbar-brand">Fleet247
+        <!--<span class ="logo-dot">.</span>--></a></div>
 
-                      </div>
-                    </li>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+        <svg class="svg-icon" viewBox="0 0 20 20">
+          <path d="M10,1.445c-4.726,0-8.555,3.829-8.555,8.555c0,4.725,3.829,8.555,8.555,8.555c4.725,0,8.555-3.83,8.555-8.555C18.555,5.274,14.725,1.445,10,1.445 M10,17.654c-4.221,0-7.654-3.434-7.654-7.654c0-4.221,3.433-7.654,7.654-7.654c4.222,0,7.654,3.433,7.654,7.654C17.654,14.221,14.222,17.654,10,17.654 M14.39,10c0,0.248-0.203,0.45-0.45,0.45H6.06c-0.248,0-0.45-0.203-0.45-0.45s0.203-0.45,0.45-0.45h7.879C14.187,9.55,14.39,9.752,14.39,10 M14.39,12.702c0,0.247-0.203,0.449-0.45,0.449H6.06c-0.248,0-0.45-0.202-0.45-0.449c0-0.248,0.203-0.451,0.45-0.451h7.879C14.187,12.251,14.39,12.454,14.39,12.702 M14.39,7.298c0,0.248-0.203,0.45-0.45,0.45H6.06c-0.248,0-0.45-0.203-0.45-0.45s0.203-0.45,0.45-0.45h7.879C14.187,6.848,14.39,7.051,14.39,7.298">
+          </path>
+        </svg>
+      </span>
+    </button>
 
-                    <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Client
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item" href="addclient.html" target="_blank">Add Client</a>
-                              <a class="dropdown-item" href="viewclient.html" target="_blank">View Client</a>
-                              
-                              
-      
-                            </div>
-                          </li>
-                          <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Driver
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <a class="dropdown-item" href="adddriver.html" target="_blank">Add Driver</a>
-                                  <a class="dropdown-item" href="viewdriver.html" target="_blank">View Driver</a>
-                                </div>
-                              </li>
-                              <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Taxis
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                      <a class="dropdown-item" href="addtaxis.html" target="_blank">Add Taxis</a>
-                                      <a class="dropdown-item" href="viewvehicle.html" target="_blank">View Taxis</a>
-                                    </div>
-                                  </li>
-                                  <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Billing
-                                        </a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                          <a class="dropdown-item" href="#">Unbilled</a>
-                                          <a class="dropdown-item" href="#">Billed:Unpaid</a>
-                                          <a class="dropdown-item" href="#">Billed:Paid</a>
-                                          <a class="dropdown-item" href="self-billing.html" target="_blank">Client Self Billing</a>
-                                        </div>
-                                      </li>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#" target="_blank">Dashboard</a>
+        </li>
+        <li class="nav-item dropdown">
 
-                                      <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                              Hi Juliet
-                                        </a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                          <a class="dropdown-item" href="profile.html" target="_blank">Profile</a>
-                                          <a class="dropdown-item" href="changepassword.html" target="_blank">Change Password</a>
-                                          <a class="dropdown-item" href="" target="_blank">Logout</a>
-                                          
-                                        </div>
-                                      </li>
-                                      <a href="support.html" target="_blank"><button class="custom-submit-btn btn btn-default">Support</button>    
-                                      </a>                         
-                                                      
-                                                      
-                  </ul>
-                       
-                       
-                </div>
-              </nav>
-              <!--/navigation-->
-<!--Dialog-->
-              <div class="alert-wrap">
-                <div class="alert alert-success custom-alert-success" role="alert" style="display: none;">
-                  <p>Form submitted sucessfully</p>
-                </div>
-              </div>
-              <!--/Dialog-->
-    <div class="form-container">
-            <div class="formCreate__head">
-                    
-                 
-        <form id="addBookingForm" class="formCreate__form" method="post" action="">
-            <div class="formitem">
-                <label class="addbookinglabel">ADD BOOKING</label>
-               
-              </div>
-            </div>
-              <div class="formCreate__content grid-form">
-                    
-              <div class="formCreate_form-group item ml mlb">
-                    <label>REFERENCE NUMBER</label>
-                    <input class="" type="text" name="reference_number" placeholder="Reference Number(Optional)" maxlength="15" required >
-                  </div>
-                
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Self-Booking
+          </a>
 
-                <div class="formCreate_form-group item mlb">
-                        <label>PICKUP DATE | TIME*</label>
-                        <div class="input-group date">
-                          <input type="text" class="date-time-input" id="datetimepicker1" name="pickup_datetime" required="">
-                        </div>
-                      </div>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="addbooking.html" target="_blank">Add Booking</a>
+            <a class="dropdown-item" href="activeunassigned.html" target="_blank">Active Unassigned</a>
 
-                      <div class="formCreate_form-group item ml mlb">
-                            <label>SELECT CLIENT*</label>
-                            <select class="select-css select2-drop dropdown1" style="width: 70%" id="client" name="operator_client_id" required>
-                              <option value="">Select Client Entity Name</option>
-                              <option value="">Travel Paro</option>
-                              <option value="">Taxi Vaxi Test</option>
-                              <option value="">Taxi Vaxi</option>
-                              
-                            
-                            </select>
-                          </div>
+            <a class="dropdown-item" href="activeassigned.html" target="_blank">Active Assigned</a>
+            <a class="dropdown-item" href="archivedunassigned.html" target="_blank">Archived Unassigned</a>
+            <a class="dropdown-item" href="archivedassigned.html" target="_blank">Archived Assigned</a>
+            <a class="dropdown-item" href="cancelledbookings.html" target="_blank">Cancelled</a>
 
-                          <div class="formCreate_form-group mlb">
-                                <label>USERS*</label>
-                               
-                                <select class="select-css select2-custom-users dropdown1" style="width: 70%" id="users" name="users[]" required>
-                                        <option id="user-empcode" value ="" style="font-size: 10px">Empcode-name-contact-email</option>
-                                </select>
-                              </div>
+          </div>
+        </li>
 
-                              <div class="formCreate_form-group ml mlb">
-                                    <label>PICKUP CITY*</label>
-                                    <select class="select-css select2-drop dropdown1"style="width: 70%" id="city" name="pickup_city_id" required>
-                                      <option value="">Select Pickup City</option>
-                                    </select>
-                                  </div>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Client
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="addclient.html" target="_blank">Add Client</a>
+            <a class="dropdown-item" href="viewclient.html" target="_blank">View Client</a>
 
-                                  <div class="formCreate_form-group mlb">
-                                    <label>COST CENTER CODE</label>
-                                    <input class="" type="text" name="cost_center_code" placeholder="Enter Cost Center Code" />
-                                  </div>  
 
-                                      <div class="formCreate_form-group ml mlb">
-                                            <label>PICKUP LOCATION*</label>
-                                            <textarea class=" custom-textarea" placeholder="Enter Your Pickup Location" name="pickup_location" id="pickup_location" required></textarea>
-                                          </div>
 
-                                          <div class="formCreate_form-group mlb">
-                                            <label>REASON FOR BOOKING*</label>
-                                            <textarea class=" custom-textarea" name="reason_of_booking" required placeholder="Enter Your Reason For Booking"></textarea>
-                                          </div>
-                                         
-                                              
-                                              <div class="formCreate_form-group ml mlb">
-                                                    <label>TAXI TYPE*</label>
-                                                    <select class="select-css select2-drop dropdown1" style="width: 70%" id="taxi" name="taxi_type_id" required>
-                                                      <option>Select Taxi Type</option>
-                                                    </select>
-                                                  </div>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Driver
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="adddriver.html" target="_blank">Add Driver</a>
+            <a class="dropdown-item" href="viewdriver.html" target="_blank">View Driver</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Taxis
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="addtaxis.html" target="_blank">Add Taxis</a>
+            <a class="dropdown-item" href="viewvehicle.html" target="_blank">View Taxis</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Billing
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Unbilled</a>
+            <a class="dropdown-item" href="#">Billed:Unpaid</a>
+            <a class="dropdown-item" href="#">Billed:Paid</a>
+            <a class="dropdown-item" href="self-billing.html" target="_blank">Client Self Billing</a>
+          </div>
+        </li>
 
-                                                  <div class="formCreate_form-group mlb ml">
-                                                        <label>TOUR TYPE*</label>
-                                                        <select class="select-css select2-drop dropdown1" style="width: 70%" id="tour" name="tour_type_id" required>
-                                                          <option>Select Tour Type</option>
-                                                        </select>
-                                                      </div>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Hi Juliet
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="profile.html" target="_blank">Profile</a>
+            <a class="dropdown-item" href="changepassword.html" target="_blank">Change Password</a>
+            <a class="dropdown-item" href="" target="_blank">Logout</a>
 
-                                                      <div class="formCreate_form-group ml mlb">
-                                                            <label>PACKAGE*</label>
-                                                            <select class="select-css select2-drop dropdown1" style="width: 70%" id="package" name="operator_client_rate_id" required>
-                                                              <option>Select Package Type</option>
-                                                            </select>
-                                                          </div>
-                                                          <div class="formCreate_form-group"></div>
-                                                        </div><!--/formgrid-->
-                                                       
-                                                            <input type="submit" value="submit" class="formCreate__input custom-submit-btn btn submitbtn">      
-                   
-                       
-        </form>
-   
-</div>
+          </div>
+        </li>
+        <a href="support.html" target="_blank"><button class="custom-submit-btn btn btn-default">Support</button>
+        </a>
+
+
+      </ul>
+
+
+    </div>
+  </nav>
+  <!--/navigation-->
+  <!--Dialog-->
+  <div class="alert-wrap">
+    <div class="alert alert-success custom-alert-success" role="alert" style="display: none;">
+      <p>Form submitted sucessfully</p>
+    </div>
+  </div>
+  <!--/Dialog-->
+  <div class="form-container">
+    <form id="addBookingForm" class="formCreate__form" method="post" action="">
+      <div class="formCreate__head">
+
+
+
+        <div class="formitem">
+          <label class="addbookinglabel">ADD BOOKING</label>
+
+        </div>
+      </div>
+      <div class="formCreate__content grid-form">
+
+        <div class="formCreate_form-group item ml mlb">
+          <label>REFERENCE NUMBER</label>
+          <input class="" type="text" name="reference_number" placeholder="Reference Number(Optional)" maxlength="15"
+            required>
+        </div>
+
+
+        <div class="formCreate_form-group item mlb">
+          <label>PICKUP DATE | TIME*</label>
+          <div class="input-group date">
+            <input type="text" class="date-time-input" id="datetimepicker1" name="pickup_datetime" required="">
+          </div>
+        </div>
+
+        <div class="formCreate_form-group item ml mlb">
+          <label>SELECT CLIENT*</label>
+          <select class="select-css select2-drop dropdown1" style="width: 70%" id="client" name="operator_client_id"
+            required>
+            <option value="">Select Client Entity Name</option>
+            <option value="">Travel Paro</option>
+            <option value="">Taxi Vaxi Test</option>
+            <option value="">Taxi Vaxi</option>
+
+
+          </select>
+        </div>
+
+        <div class="formCreate_form-group mlb">
+          <label>USERS*</label>
+
+          <select class="select-css select2-custom-users dropdown1" style="width: 70%" id="users" name="users[]"
+            required>
+            <option id="user-empcode" value="" style="font-size: 10px">Empcode-name-contact-email</option>
+          </select>
+        </div>
+
+        <div class="formCreate_form-group ml mlb">
+          <label>PICKUP CITY*</label>
+          <select class="select-css select2-drop dropdown1" style="width: 70%" id="city" name="pickup_city_id" required>
+            <option value="">Select Pickup City</option>
+          </select>
+        </div>
+
+        <div class="formCreate_form-group mlb">
+          <label>COST CENTER CODE</label>
+          <input class="" type="text" name="cost_center_code" placeholder="Enter Cost Center Code" />
+        </div>
+
+        <div class="formCreate_form-group ml mlb">
+          <label>PICKUP LOCATION*</label>
+          <textarea class=" custom-textarea" placeholder="Enter Your Pickup Location" name="pickup_location" id="pickup_location"
+            required></textarea>
+        </div>
+
+        <div class="formCreate_form-group mlb">
+          <label>REASON FOR BOOKING*</label>
+          <textarea class=" custom-textarea" name="reason_of_booking" required placeholder="Enter Your Reason For Booking"></textarea>
+        </div>
+
+
+        <div class="formCreate_form-group ml mlb">
+          <label>TAXI TYPE*</label>
+          <select class="select-css select2-drop dropdown1" style="width: 70%" id="taxi" name="taxi_type_id" required>
+            <option>Select Taxi Type</option>
+          </select>
+        </div>
+
+        <div class="formCreate_form-group mlb ml">
+          <label>TOUR TYPE*</label>
+          <select class="select-css select2-drop dropdown1" style="width: 70%" id="tour" name="tour_type_id" required>
+            <option>Select Tour Type</option>
+          </select>
+        </div>
+
+        <div class="formCreate_form-group ml mlb">
+          <label>PACKAGE*</label>
+          <select class="select-css select2-drop dropdown1" style="width: 70%" id="package" name="operator_client_rate_id"
+            required>
+            <option>Select Package Type</option>
+          </select>
+        </div>
+        <div class="formCreate_form-group"></div>
+      </div>
+      <!--/formgrid-->
+
+      <input type="submit" value="submit" class="formCreate__input custom-submit-btn btn submitbtn">
+
+
+    </form>
+
+  </div>
   <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <script src ="js/jquery.datetimepicker.full.min.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="js/jquery.datetimepicker.full.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
-  <script src ="js/app.js"></script>
-  
-  <script type="text/javascript">
-  
-  $('#datetimepicker1').datetimepicker();
+  <script src="js/app.js"></script>
 
-  $("select").select2({
-    width: 'resolve' // need to override the changed default
-  });
+  <script type="text/javascript">
+    $('#datetimepicker1').datetimepicker();
+
+    $("select").select2({
+      width: 'resolve' // need to override the changed default
+    });
   </script>
 </body>
+
 </html>

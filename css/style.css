@@ -1,3 +1,5 @@
+
+
 a ,.canceldetails{
     text-decoration: none;
 }
@@ -6,7 +8,10 @@ a:hover
     text-decoration:none;
     cursor:pointer;
    }
-
+.purple-section
+{
+    margin-bottom:20px;
+}
 body {
     font-family: 'Titillium Web', sans-serif;
     /*font-family: 'Titillium Web','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
@@ -18,6 +23,60 @@ body {
 #user-empcode
 {
    font-size:10px;
+}
+/*Counter block*/
+/***Number counter styling****/
+.center-section
+{
+  margin:auto;
+}
+.numbers__item
+{
+   background-color: #fff;
+   padding: 1rem;
+   border-radius: 2px;
+   box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.2);
+}
+.numbers__value {
+   font-weight: bold;
+   text-align: center;
+  font-size:1.2rem;
+   margin: 0;
+}
+.container1
+{
+    width:95%;
+    margin:auto;
+    background:white;
+
+}
+#myChart,#myChart1
+{
+    border-radius: 3px;
+    box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.2);
+}
+.grid {
+   display: grid;
+   grid-template-columns: 1fr;
+  grid-gap:10px;
+  /*padding:0 20px;*/
+  }
+  .numbers__text {
+   text-align: center;
+   font-size: 0.9rem;
+   margin-top: 1rem;
+}
+.svg-rupee
+{
+   width:1.3rem;
+   height:1.3rem;
+}
+.value-rupee
+{
+   display:inline;
+   font-weight: bold;
+   text-align: center;
+   font-size: 1.2rem;
 }
 
 /***BROWSER SUPPORT FOR SELECT BOX******/
@@ -690,7 +749,12 @@ box-shadow: 0 3px 16px -2px #ccc;
    grid-template-columns: 1fr;
 }
 @media screen and (min-width: 1028px) {
-    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-gap: 10px;
+        padding: 0 20px;
+    }
  /*MODAL STYLES FOR ADD TAXI*/
  .grid3
     {
