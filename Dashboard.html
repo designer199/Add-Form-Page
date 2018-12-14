@@ -221,7 +221,7 @@
 <div class="container1">
 <div class="grid-form">
     <div class="grid-item1">
-        <canvas id="myChart" style ="position:relative; width:10vw; height:170px;"></canvas>
+        <canvas id="bookings" style ="position:relative; width:10vw; height:170px;"></canvas>
 
     </div>
     <div class="grid-item1">
@@ -258,50 +258,105 @@
   <script src="js/app.js"></script>
 
   <script type="text/javascript">
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var ctx1 = document.getElementById('myChart1').getContext('2d');
-var chart = new Chart(ctx, {
-    // The type of chart we want to create
-    type: 'line',
+  /* Daily Bookings Bar Chart */
+var bookings = document.getElementById("bookings");
+var chart = document.getElementById("myChart1");
+var book = new Chart(bookings, {
+	type: 'bar',
+	data: {
+		labels: ["April 2018", "May 2018", "June 2018", "July 2018", "August 2018", "November 2018"],
+		datasets: [
 
-    // The data for our dataset
-    data: {
-        labels: ["January", "February", "March", "April", "May", "June", "July"],
-        datasets: [{
-            label: "My First dataset",
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: [0, 10, 5, 2, 20, 30, 45],
-        }]
-    },
+			{
+				type: 'bar',
+				label: 'of Bookings',
+				data: [3, 74, 28, 59, 21, 1],
+        backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+				borderWidth: 1
+			}
 
-    // Configuration options go here
-    options: {
-        responsive:true,
-        maintainAspectRatio: false
-    }
+
+		]
+
+	},
+	options: {
+		scales: {
+			yAxes: [{
+				ticks: {
+					beginAtZero:true
+					
+				}
+			}],
+		},
+		legend: {
+			display: false,
+		}
+	}
 });
 
-var chart1 = new Chart(ctx1, {
-    // The type of chart we want to create
-    type: 'line',
 
-    // The data for our dataset
-    data: {
-        labels: ["January", "February", "March", "April", "May", "June", "July"],
-        datasets: [{
-            label: "My First dataset",
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: [0, 10, 5, 2, 20, 30, 45],
-        }]
-    },
 
-    // Configuration options go here
-    options: {
-        responsive:true,
-        maintainAspectRatio: false
-    }
+var chart1 = new Chart(chart, {
+  type: 'bar',
+	data: {
+		labels: ["April 2018", "May 2018", "June 2018", "July 2018", "August 2018", "November 2018"],
+		datasets: [
+
+			{
+				type: 'bar',
+				label: 'of Bookings',
+				data: [3, 74, 28, 59, 21, 1],
+        backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+				borderWidth: 1
+			}
+
+
+		]
+
+	},
+	options: {
+		scales: {
+			yAxes: [{
+				ticks: {
+					beginAtZero:true
+					
+				}
+			}],
+		},
+		legend: {
+			display: false,
+		}
+	}
 });
 
 window.addEventListener('resize',e=>
