@@ -77,6 +77,11 @@ body {
     background:white;
 
 }
+.con
+{
+    width:96%;
+    margin:auto;
+}
 #bookings,#myChart1
 {
     border-radius: 3px;
