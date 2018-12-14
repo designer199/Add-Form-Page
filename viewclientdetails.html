@@ -121,12 +121,12 @@
                     <div class="breadcrumb1">
                    
                         
-                          <span><a href="viewdriver.html"  target="_blank">Drivers</a></span>
-                          <span class="tripheading">/Driver Details</span>
+                          <span><a href="viewclient.html"  target="_blank">Clients</a></span>
+                          <span class="tripheading">/Client Details</span>
                       
                       </div>
-                      <div class="row">
-                            <div class="col-md-9">
+                    
+                          
                       <div class="form-containerwith2cols">
                         <div class="formCreate__head">
                                 
@@ -134,78 +134,98 @@
                     <!--<form id="addBookingForm" class="formCreate__form" method="post" action="">-->
                        
                         <div class="form-item">
-                            <label class="addbookinglabel">DRIVER DETAILS</label>
+                            <label class="addbookinglabel">DETAILS</label>
                            
                           </div>
                         </div><!--/head-->
                         <div class="formCreate__content grid-form1">
                            
                             <div class="grid-item item mlb">
-                                <label>NAME</label>
-                                <p>bb bb</p>
+                             
+                                    <label>ENTITY NAME</label>
+                                    <p><input type="text" placeholder="Client Name" pattern="[A-Za-z\s]{1,30}" class="form-control" value="qq" name="entity_name" required=""></p>
+                                 
                                 </div>
                                 <div class="grid-item item mlb">
-                                    <label>EMAIL</label>
-                                    <p>bb@bb.bb</p>
+                                 
+                                        <label>CLIENT NAME</label>
+                                        <p><input type="text" placeholder="Client Name" pattern="[A-Za-z\s]{1,30}" class="form-control" value="sdf" name="client_name" required=""></p>
+                                    
                                     </div>
               
                                     <div class="grid-item item mlb">
-                                        <label>VERIFICATION STATUS</label>
-                                        <div id="pending" class="driver-detail-status">
-                                            <span class="verification-msg pending">PENDING</span>
-                                          </div>
+                                       
+                                            <label>CONTACT NAME</label>
+                                            <p><input type="text" placeholder="Owner Name" pattern="[A-Za-z\s]{1,30}" class="form-control" value="sd" name="name" required="" title="Can contain uppercase &amp; lowercase letters"></p>
+                                         
                                         </div>
               
                                         <div class="grid-item item mlb">
-                                            
-                                                <label>STATUS</label>
-                                                <div class="toggle switch client-active toggle-on">
-                                                        <div class="toggle-text-off">Inactive</div>
-                                                        <div class="glow-comp"></div>
-                                                        <div class="toggle-button"></div>
-                                                        <div class="toggle-text-on">Active</div>
-                                                      </div>
+                                         
+                                                <label>REGISTERED ADDRESS</label>
+                                                <p>1 a, Gurgaon - 122001</p>
+                                             
                                             </div>
               
                                         <div class="grid-item item mlb">
                                           
-                                                <label>LICENSE NUMBER</label>
-                                                <p>bb</p>
                                             
+                                                <label>CONTACT PHONE NUMBER</label>
+                                                <p><input type="text" placeholder="Owner Phone Number" pattern="[0-9]{10}" class="form-control" value="8851958872" name="contact_no" required="" title="Should contain 10 Digits"></p>
+                                              
                                             </div>
               
                                             <div class="grid-item item mlb">
                                               
-                                                    <label>PHONE</label>
-                                                    <p>4455443344</p>
+                                             
+                                                    <label>CONTACT EMAIL</label>
+                                                    <input type="email" placeholder="Owner Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,3}$" value="" class="form-control" name="email" title="Should be of the format: abc@xyz.com">
+                                                  
                                                 
                                                 </div>
               
                                                 <div class="grid-item item mlb">
-                                                    <label>COMMENTS</label>
-                                                    <p>mh</p>
+                                                  
+                                                        <label>GSTIN</label>
+                                                        <input type="text" placeholder="GSTIN Number" pattern="[a-zA-Z0-9]+" title="Can contain numbers, uppercase, lowercase letters" value="3erewf" class="form-control" name="gstin_number">
+                                                      
                                                   </div> 
               
                                                   <div class="grid-item item mlb ">
-                                                    <label>TRIP DETAILS</label>
-                                                    <p><a href="drivertripdetails.html" target="_blank">Trip Details</a></p>
+                                                    
+                                                        <label>PAN</label>
+                                                        <input type="text" placeholder="PAN Number" pattern="[a-zA-Z0-9]+" value="dsjgjs3ds" title="Can contain numbers, uppercase, lowercase letters" class="form-control" name="pan_number">
+                                                      
                                                   </div>
               
                                                   <div class="grid-item item mlb">
-                                                    <label>TRACK</label>
-                                                    <p><a href="http://127.0.0.1:8000/operator/drivers/66/track" target="_blank">Track Driver</a></p>
+                                                   
+                                                        <label>RATES</label>
+                                                        <p><a target="_blank" href="clientrates" target="_blank">Rates</a></p>
+                                                     
                                                   </div>
                                                        
                                                   <div class="grid-item item ml mlb">
-                                                    <label>RESET PASSWORD</label>
-                                                    <p>
-                                                      <a href="" data-toggle="modal" data-target="#exampleModal">
-                                                        <svg class="lock svg-inline--fa fa-unlock-alt fa-w-14" aria-hidden="true" data-prefix="fa" data-icon="unlock-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M400 256H152V152.9c0-39.6 31.7-72.5 71.3-72.9 40-.4 72.7 32.1 72.7 72v16c0 13.3 10.7 24 24 24h32c13.3 0 24-10.7 24-24v-16C376 68 307.5-.3 223.5 0 139.5.3 72 69.5 72 153.5V256H48c-26.5 0-48 21.5-48 48v160c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zM264 408c0 22.1-17.9 40-40 40s-40-17.9-40-40v-48c0-22.1 17.9-40 40-40s40 17.9 40 40v48z"></path></svg><!-- <i class="fa fa-unlock-alt"></i> -->
-                                                      </a>
-                                                    </p>
+                                                  
+                                                        <label>USERS</label>
+                                                        <a target="_blank" href="clientusers.html" target="_blank">Users</a>
+                                                    
                                                   </div>
-              
-                                                               
+                                                  <div class="grid-item item ml mlb">
+                                                    <label>TRIP DETAILS</label>
+                                                    <p><a target="_blank" href="">Trip Details</a></p>
+                                                  </div>
+                                                 <div class="grid-item item ml mlb">
+                                                   
+                                                        <label>STATUS</label>
+                                                        <div class="toggle switch client-active toggle-on">
+                                                          <div class="toggle-text-off">Inactive</div>
+                                                          <div class="glow-comp"></div>
+                                                          <div class="toggle-button"></div>
+                                                          <div class="toggle-text-on">Active</div>
+                                                        </div>
+                                                     
+                                                 </div>              
                                      
                       </form>
                  
@@ -213,46 +233,9 @@
               </div>
             </div>         
                 
-        </div>     <!--/add driver-->    
-        <div class=" col-md-3 col-sm-6 col-xs-12 sticky-profile">
-                <div class="profile">
+         <!--/add driver-->    
         
-                            <div class="profile__img">
-                    <img src="http://127.0.0.1:8000/storage/driver_images/14TsIcUPR43pjg23tDpiL5tFRakh4WDQfuPSRcXw.png">
-                  </div>
-        <div class="grid-modal-add-driver">
-            <div class="grid-item mlb">
-                    <label class="">NAME</label>
-            </div>
-            <div class="grid-item mlb">
-                    <p class="">bb bb</p>
-            </div>
-            <div class="grid-item mlb">
-                    <label class="">PHONE</label>
-            </div>
-            <div class="grid-item mlb">
-                    <p class="">4455443344</p>
-            </div>
-            <div class="grid-item mlb">
-                    <label class="">EMAIL</label>
-            </div>
-            <div class="grid-item mlb">
-                    <p class="">bb@bb.bb</p>
-            </div>
-            <div class="grid-item mlb">
-                    <label class="">RATING</label>
-            </div>
-            <div class="grid-item mlb">
-                    <p class="">Rating: Not Available</p>
-            </div>
-        </div>
-                
-                 
-        
-                 
-                          </div>
-              </div>
-              <div class="col-md-9">
+            
                   <div class="form-container-details">
                     <div class="formCreate__head">
                             
@@ -292,137 +275,19 @@
                             </div>
                     </div>
                 </div><!--/form-container-->
-                    </div>
+                 
 
                   
          
-                              <div class="col-md-9">
-                                    <div class="form-container-details">
-                                      <div class="formCreate__head">
-                                              
-                                           
-                                  <form id="addBookingForm" class="formCreate__form" method="post" action="">
-                                      <div class="formitem">
-                                          <label class="addbookinglabel">LINKED TAXI - DETACHED</label>
-                                         
-                                        </div>
-                                      </div>
-                                      <div class="grid-form1">
-                                          <div class="grid-item mlb">
-                                              <label  class="">DRIVER</label>
-                                              <select >
-                                                  <option>
-                                                      Driver Id |Voter Id
-                                                  </option>
-                                              </select>
-                                          </div>
-                                          <div class="grid-item mlb">
-                                                  <label class="">TAXI</label>
-                                                  <select >
-                                                        <option>
-                                                            Driver Id |Voter Id
-                                                        </option>
-                                                    </select>
-                                              </div>
-                                              <div class="grid-item mlb">
-                                                  <label class="">ATTACH</label>
-                                                  
-                                                  <button type="button" class=" custom-submit-btn btn">ATTACH</button>
-                                              </div>
-                                              <div class="grid-item mlb">
-                                                    <label class="">UNLINK</label>
-                                                  
-                                                    <button type="button" class=" custom-submit-btn btn">UNLINK</button>
-                                              </div>
-                                      </div>
-                                  </div><!--/form-container-->
-                                      </div>       
+                                                
                                       
                                       
 
 
-                              <div class="col-md-9">
-                                    <div class="form-container-details">
-                                      <div class="formCreate__head">
-                                              
-                                           
-                                  <form id="addBookingForm" class="formCreate__form" method="post" action="">
-                                      <div class="formitem">
-                                          <label class="addbookinglabel">ACCOUNT DETAILS</label>
-                                         
-                                        </div>
-                                      </div>
-                                      <div class="grid-form1">
-                                          <div class="grid-item mlb">
-                                              <label  class="">BENEFICIARY NAME</label>
-                                              <input type="text" class="" name="beneficiary_name" required="">
-                                          </div>
-                                          <div class="grid-item mlb">
-                                                <label>ACCOUNT NUMBER</label>
-                                                <input type="text" class="" name="beneficiary_account_number" required="">
-                                              </div>
-                                              <div class="grid-item mlb">
-                                                <label>IFSC CODE</label>
-                                                <input type="text" class="" name="ifsc_code" required="">
-                                                          
-                                              </div>
-                                              <div class="grid-item mlb">
-                                                    <label class="">ADD</label>
-                                                  
-                                                    <button type="button" class=" custom-submit-btn btn">ADD</button>
-                                              </div>
-                                      </div>
-                                  </div><!--/form-container-->
-                                      </div>      
-
-                                      <div class="col-md-9">
-                                            <div class="form-container-details">
-                                              <div class="formCreate__head">
-                                                      
-                                                   
-                                          <form id="addBookingForm" class="formCreate__form" method="post" action="">
-                                              <div class="formitem">
-                                                  <label class="addbookinglabel">FEEDBACK & RATING</label>
-                                                 
-                                                </div>
-                                              </div>
-                                              <div class="grid-form1">
-                                                 <div lass="mlb">
-                                                      <label class="mlb">REVIEWS</label>
-                                                     <p class="mlb">No reviews yet.</p>
-                                                    </div>
-                                                  
-                                              </div>
-                                          </div><!--/form-container-->
-                                              </div>                           
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Reset Password</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  
-                        <label>Do you want to Reset Password ?</label>
-                        <form method="post" id="cancel-form"  action="/operator/self-bookings/271/cancel/Archived Unassigned Bookings">
-                          
-                        </form>
-                     
-                     
-                          <button type="submit" class="btn btn-default custom-submit-btn modal-button modal-yes">Yes</button>
-                          <button type="button" class="btn btn-default modal-button close-button" data-dismiss="modal">Close</button>
-                        
-                </div>
-              </div>
-            </div>
-          </div> <!-- /Modal -->
-                   <!-- </form>-->
+                      
+       
         
-                    </div><!--/container closed-->
+                   
 
 
                     </div><!--/page-container-->

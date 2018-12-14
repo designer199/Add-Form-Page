@@ -6,15 +6,20 @@ a ,.canceldetails{
 a:hover
   {
     text-decoration:none;
+   
     cursor:pointer;
    }
+.alink:hover   
+{
+    color:white;
+}
 .purple-section
 {
     margin-bottom:20px;
 }
 body {
-    font-family: 'Titillium Web', sans-serif;
-    /*font-family: 'Titillium Web','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    /*font-family: 'Titillium Web', sans-serif;*/
+    font-family: 'Titillium Web','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #444;
     /*line-height: 1.7;*/
     font-weight: 400;
@@ -23,6 +28,28 @@ body {
 #user-empcode
 {
    font-size:10px;
+}
+/*DRIVER TRACK*/
+.info {
+    background-color: #fff;
+    width: 100%;
+    padding: 0 4%;
+    margin-left: 6%;
+    border-radius: 3px;
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.15);
+    overflow-y: scroll;
+    min-height: 200px;
+    max-height: 300px;
+}
+
+.info__block {
+    padding-top: 4%;
+}
+.info__head {
+    padding-bottom: 1rem;
+}
+.info__details {
+    overflow: auto;
 }
 /*Counter block*/
 /***Number counter styling****/

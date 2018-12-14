@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.dataTables.css">
    
-    <title>Client Rates</title>
+    <title>Add Client Contact</title>
 </head>
 <body>
         <nav class="navbar navbar-expand-lg mb-3">
@@ -106,6 +106,7 @@
                                           
                                         </div>
                                       </li>
+                                      
                                       <a href="support.html" target="_blank"><button class="custom-submit-btn btn btn-default">Support</button>    
                                       </a>                         
                                                       
@@ -121,7 +122,8 @@
                    
                         
                           <span><a href="viewclient.html"  target="_blank">Clients</a></span>
-                          <span class="tripheading">/ Client Rates</span>
+                          <span>/<a href="clientusers.html"  target="_blank">Client Users</a></span>
+                          <span class="tripheading">/ Client Add Users</span>
                       
                       </div>
                     </div>
@@ -131,70 +133,56 @@
                      
             <!--<form id="addBookingForm" class="formCreate__form" method="post" action="">-->
                 <div class="formitem">
-                    <label class="addbookinglabel">CLIENT - qq RATES</label>
+                    <label class="addbookinglabel">ADD USER</label>
                    
                   </div>
                 </div><!--/head-->
-          
-                <table id="table_id" class="row-border" width="100%">
-                    <thead>
-                        <tr>
-                            <th>TOUR TYPE</th>
-                            <th>TAXI TYPE</th>
-                            <th>CITY</th>
-                            <th>PACKAGE NAME</th>
-                            <th>HRS INCLUDED</th>
-                            <th>EXTRA HR RATE</th>
-                            <th>KMS INCLUDED</th>
-                            <th>EXTRA KM RATE</th>
-                            <th>BASE RATE</th>
-                            <th>DRIVER ALLOWANCE</th>
-                            <th>DELETE</th>
-                            <th>STATUS</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Local</td>
-                            <td>Sedan</td>
-                            <td>Delhi</td>
-                            <td>Sasta</td>
-                            <td>8</td>
-                            <td>200</td>
-                            <td>80</td>
-                            <td>12</td>
-                            <td>1500</td>
-                            <td>250</td>
-                            <td><a href="" data-toggle="modal" data-target="#exampleModal">
-                                <svg class="svg-inline--fa fa-trash-alt trash fa-w-14" aria-hidden="true" data-prefix="fa" data-icon="trash-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M0 84V56c0-13.3 10.7-24 24-24h112l9.4-18.7c4-8.2 12.3-13.3 21.4-13.3h114.3c9.1 0 17.4 5.1 21.5 13.3L312 32h112c13.3 0 24 10.7 24 24v28c0 6.6-5.4 12-12 12H12C5.4 96 0 90.6 0 84zm416 56v324c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48V140c0-6.6 5.4-12 12-12h360c6.6 0 12 5.4 12 12zm-272 68c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208z"></path></svg>
-                            </a></td>
-                            <td>
-                                <div class="toggle switch client-active toggle-on">
-                                    <div class="toggle-text-off">Inactive</div>
-                                    <div class="glow-comp"></div>
-                                    <div class="toggle-button"></div>
-                                    <div class="toggle-text-on">Active</div>
-                                </div>    
-                            </td>    
-                        </tr>
-                       
-                    </tbody>
-                </table>
+          <div class="grid-form">
+              <div class="grid-item mlb">
+               
+                    <label>EMPLOYEE ID</label>
+                    <input type="text" name="employee_id" class="" id="employee_id">
+                 
+                         
+              </div>
+              <div class="grid-item mlb">
                 
-                  <a href="addclientrates.html" target="_blank" class="alink button formCreate__input custom-submit-btn btn submitbtn">ADD RATE</a>
+                    <label>NAME*</label>
+                    <input type="text" name="name" class="" id="name" required="">
+                
+              </div>
+              <div class="grid-item mlb">
+              
+                    <label>EMAIL</label>
+                    <input type="text" name="email" class="form-control" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,3}$" title="Should be of the format: abc@xyz.com">
+                 
+                          
+               </div>
+               <div class="grid-item mlb">
+               
+                    <label>CONTACT NUMBER</label>
+                    <input type="text" name="contact_no" class="form-control" id="contact_no" pattern="[0-9]{10}" title="Should contain 10 Digits">
+                  
+                       
+                              
+                   </div>
+          </div>
+                
+          <input type="submit" value="submit" class="formCreate__input custom-submit-btn btn submitbtn">      
+               
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Delete Rate</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Delete Contact</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
           
-                <label>Do you want to Delete this Rate ?</label>
+                <label>Do you want to Delete this Contact ?</label>
                 <form method="post" id="cancel-form"  action="/operator/self-bookings/271/cancel/Archived Unassigned Bookings">
                   
                 </form>
@@ -234,14 +222,6 @@
         $('#table_id').DataTable( {
         responsive: true
     } );
-    $('#table_id').on('click','.toggle',function(){
-              if($(this).hasClass('toggle-on')) {
-                $(this).removeClass("toggle-on");
-              }
-              else {
-                $(this).addClass("toggle-on");
-              }
-            });
     } );   
       </script>
       

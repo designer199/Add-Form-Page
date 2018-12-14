@@ -220,12 +220,12 @@
 
 <div class="container1">
 <div class="grid-form">
-    <div class="grid-item">
-        <canvas id="myChart" width="500" height="200"></canvas>
+    <div class="grid-item1">
+        <canvas id="myChart" style ="position:relative; width:10vw; height:170px;"></canvas>
 
     </div>
-    <div class="grid-item">
-        <canvas id="myChart1"  width="500" height="200"></canvas>
+    <div class="grid-item1">
+        <canvas id="myChart1" style ="position:relative; width:10vw; height:170px;"></canvas>
         
     </div>
 </div>
@@ -277,7 +277,8 @@ var chart = new Chart(ctx, {
 
     // Configuration options go here
     options: {
-        responsive:true
+        responsive:true,
+        maintainAspectRatio: false
     }
 });
 
@@ -297,8 +298,17 @@ var chart1 = new Chart(ctx1, {
     },
 
     // Configuration options go here
-    options: {}
+    options: {
+        responsive:true,
+        maintainAspectRatio: false
+    }
 });
+
+window.addEventListener('resize',e=>
+{
+chart.resize();
+chart1.resize();
+})
   </script>
 </body>
 
