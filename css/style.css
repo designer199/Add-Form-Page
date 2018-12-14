@@ -82,7 +82,7 @@ body {
     width:96%;
     margin:auto;
 }
-#bookings,#myChart1
+#chart,#myChart1
 {
     border-radius: 3px;
     box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.2);
