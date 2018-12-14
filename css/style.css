@@ -72,12 +72,12 @@ body {
 }
 .container1
 {
-    width:95%;
+    width:96%;
     margin:auto;
     background:white;
 
 }
-#myChart,#myChart1
+#bookings,#myChart1
 {
     border-radius: 3px;
     box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.2);
