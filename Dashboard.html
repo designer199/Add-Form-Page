@@ -281,6 +281,7 @@
   /* Daily Bookings Bar Chart */
 var bookings = document.getElementById("barChartExample");
 var chart = document.getElementById("barChartExample1");
+Chart.defaults.global.defaultFontSize = '11';
 var book = new Chart(bookings, {
 	type: 'bar',
 	data: {
@@ -320,6 +321,7 @@ var book = new Chart(bookings, {
 			yAxes: [{
 				ticks: {
 					beginAtZero:true
+          
 					
 				}
 			}],
@@ -372,6 +374,7 @@ var chart1 = new Chart(chart, {
 		scales: {
 			yAxes: [{
 				ticks: {
+         
 					beginAtZero:true
 					
 				}
